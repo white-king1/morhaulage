@@ -9,7 +9,7 @@
                     </div>
                     <div class="col-12 col-sm-6">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"> <a class="home-item" href="index.html"><i data-feather="home"></i></a>
+                            <li class="breadcrumb-item"> <a class="home-item" href="{{route('home')}}"><i data-feather="home"></i></a>
                             </li>
                             <li class="breadcrumb-item"> Dashboard</li>
                             <li class="breadcrumb-item active"> Page</li>
@@ -182,7 +182,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="product-page.html">
+                                                                                href="{{route('investp.report')}}">
                                                                                 View Report
                                                                             </a>
                                                                         </center>
@@ -210,7 +210,7 @@
                                                             <br>
 
 
-                                                            <a class="btn btn-secondary" href="product-page.html">
+                                                            <a class="btn btn-secondary" href="{{route('investp.report')}}">
                                                                 View Report
                                                             </a>
                                                         </center>
@@ -247,7 +247,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="product-page.html">
+                                                                                href="{{route('investp.report')}}">
                                                                                 View Report
                                                                             </a>
                                                                         </center>
@@ -275,7 +275,7 @@
                                                             <br>
 
 
-                                                            <a class="btn btn-secondary" href="product-page.html">
+                                                            <a class="btn btn-secondary" href="{{route('investp.report')}}">
                                                                 View Report
                                                             </a>
                                                         </center>
@@ -312,7 +312,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="product-page.html">
+                                                                                href="">
                                                                                 View Report
                                                                             </a>
                                                                         </center>
@@ -340,7 +340,7 @@
                                                             <br>
 
 
-                                                            <a class="btn btn-secondary" href="product-page.html">
+                                                            <a class="btn btn-secondary" href="">
                                                                 View Report
                                                             </a>
                                                         </center>

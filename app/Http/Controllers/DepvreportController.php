@@ -10,4 +10,9 @@ class DepvreportController extends Controller
     {
         return view('viewreport.depv_report');
     }
+
+    public function investpReport()
+    {
+        return view ('viewreport.investp_report');
+    }
 }

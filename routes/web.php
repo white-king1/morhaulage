@@ -30,4 +30,8 @@ Route::middleware(['auth'])->prefix('user')->group(function () {
 });
 Route::post('/user', 'DashboardController@regRef')->name('reg.ref');
 Route::get('/user_/{place}', 'DashboardController@userView')->name('user.view');
-Route::get('/depv_repost', 'DepvreportController@depvReport')->name('depv.report');
+
+// REPORT VIEW ROUTE
+Route::get('/depv_repoRt', 'DepvreportController@depvReport')->name('depv.report');
+Route::get('/investp_repoRt', 'DepvreportController@investpReport')->name('investp.report');
+
