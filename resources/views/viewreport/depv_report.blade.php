@@ -80,10 +80,7 @@
                                             <td>
                                                 <div class="badge badge-light-primary">28th January 2023</div>
                                             </td>
-
                                         </tr>
-
-
                                     </tbody>
                                 </table>
                             </div>

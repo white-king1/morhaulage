@@ -33,7 +33,7 @@
 
                                     </div>
                                     <div class="col-md-10">
-                                        <a href="">
+                                        <a href="{{route('investments')}}">
                                             <button class="btn btn-primary" style="padding-right: 30px;">InvestPlan</button>
                                         </a>
                                     </div>

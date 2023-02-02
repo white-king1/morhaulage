@@ -67,13 +67,21 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+
+        // $user = $request->referral_link;
+        $referral_link = \Str::random(10);
+
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'phone'=>$data['phone'],
+            'referral_link'=>$referral_link,
             'password' => Hash::make($data['password']),
         ]);
+
+        
     }
 
-    
+
 }

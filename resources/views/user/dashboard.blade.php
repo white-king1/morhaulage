@@ -63,11 +63,11 @@
                         <div class="card-body ">
                             <div class="col-md-6 mb-2" style="margin-left: 20px;">
                                 <label>
-                                    <h3>Referral Link</h3>
+                                    <h3>Referral Code</h3>
                                 </label>
                                 <div class="input-group">
                                     <input type="text" name="text" class="form-control" id="referralURL"
-                                        value="http://127.0.0.1:8000/{{ Auth::user()->referral_link }}" readonly>
+                                        value="{{ Auth::user()->referral_link }}" readonly>
                                     <div class="input-group-append">
                                         <span class="input-group-text copytext copyBoard" id="copyBoard"
                                             onclick="myFunction()"> <i class="fa fa-copy"></i> </span>

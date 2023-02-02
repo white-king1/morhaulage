@@ -404,7 +404,7 @@
                                 </li>
                                 <li class="sidebar-list">
                                     <label class="badge badge-light-primary">2</label><a
-                                        class="sidebar-link sidebar-title" href="#">
+                                        class="sidebar-link sidebar-title" href="{{ route('user.dashboard') }}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g>
@@ -419,15 +419,10 @@
                                                 </g>
                                             </g>
                                         </svg><span class="lan-3">Dashboard </span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a class="lan-4" href="index.html">Default</a></li>
-                                        <li><a class="lan-5" href="dashboard-02.html">E-commerce</a></li>
-                                        <li><a href="crypto-dashboard.html">Crypto</a></li>
-                                    </ul>
                                 </li>
 
                                 {{-- START HERE  --}}
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="{{route('investments')}}">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g>
@@ -450,7 +445,7 @@
                                  </a>
                                 </li>
                                 <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
-                                    href="task.html">
+                                    href="{{route('deposit.now')}}">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g>

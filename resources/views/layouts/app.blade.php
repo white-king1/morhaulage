@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Business - One Page</title>
+    <title>Morhaulage Page</title>
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Css Fils -->
