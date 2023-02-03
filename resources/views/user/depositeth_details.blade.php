@@ -5,13 +5,13 @@
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-sm-6">
-                    <h3>BITCOIN(BEP20) DEPOSIT PREVIEW</h3>
+                    <h3>ETHEREUM(ERC20) DEPOSIT PREVIEW</h3>
                 </div>
                 <div class="col-12 col-sm-6">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">
                                 <i data-feather="home"></i></a></li>
-                        <li class="breadcrumb-item">DEPOSIT</li>
+                        <li class="breadcrumb-item">ETHEREUM DEPOSIT</li>
                         <li class="breadcrumb-item active">PREVIEW</li>
                     </ol>
                 </div>
@@ -26,7 +26,7 @@
             <div class="col-xxl-10 col-md-10 mx-auto box-col-10">
                 <div class="card">
                     <div class="col-md-6">
-                        <img src="assets_dashboard/images/bitcoinnew.jpg"alt="btc" style="margin-left: 400px; padding-top:50px;">
+                        <img src="assets_dashboard/images/ethn.png"alt="btc" style="margin-left: 400px; padding-top:50px;">
                     </div>
                     <div class="card-header pb-0">
                         <h5> DEPOSIT LIMIT: USD50 - USD1,000,000 </h5>
@@ -34,7 +34,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12">
-                                <form class="theme-form mega-form" action="{{route('postbtc.payment')}}" method="POST">
+                                <form class="theme-form mega-form" action="{{route('posteth.payment')}}" method="POST">
                                          @csrf
                                     <div class="row">
                                         <div class="col">

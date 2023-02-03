@@ -15,10 +15,12 @@ class CreateTransactionsTable extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->string('transaction_id')->nullable();
             $table->integer('user_id');
-            $table->integer('amount');
+            $table->enum('plan', ['standard','pro','deluxe','gold','business','carhouse']);
+            $table->float('amount');
             $table->integer('transaction_type_id');
-            $table->enum('status', ['pending','success','failed'])->default('pending');
+            $table->enum('status', ['pending','success','failed','paid'])->default('pending');
             $table->boolean('is_credit');
             $table->string('referral_link')->nullable();
             $table->string('details')->nullable();

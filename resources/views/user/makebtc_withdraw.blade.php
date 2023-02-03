@@ -5,13 +5,13 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <h3>Make Payment and Confirm</h3>
+                        <h3>Make  a Bitcoin Withdrawal</h3>
                     </div>
                     <div class="col-12 col-sm-6">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"> <a class="home-item" href="{{ route('home') }}">
                                     <i data-feather="home"></i></a></li>
-                            <li class="breadcrumb-item"> Payment</li>
+                            <li class="breadcrumb-item"> Withdrawal</li>
                             <li class="breadcrumb-item active">Confirm</li>
                         </ol>
                     </div>
@@ -26,58 +26,36 @@
                         <div class="card-header card-no-border">
                             <div class="media media-dashboard">
                                 <div class="media-body">
-                                    <center>
-                                        <h4>You requested to make a deposit of USD{{ number_format($trans->amount) }}
-                                            kindly,</h4>
-                                    </center>
+
+                                        <h4>
+                                            You requested to make a withdrawal of::USD{{ number_format($withdraw->withdraw_amount) }},<br>
+                                            To your Bitcoin(BEP20) wallet address:: {{($withdraw->wallet_address)}}.
+                                        </h4>
+
                                     <br>
                                     <center>
                                         <h5 class="mb-0">Follow the instructions;</h5>
                                     </center>
                                     <br>
-                                    <h4>1. Copy the Bitcoin(BEP20) wallet address, make a payment of</h4>
-
-                                    <h4>USD{{ number_format($trans->amount) }} ,to start your investment,and</h4>
-                                    <br>
-                                    <h4>2.click on Confrim</h4>
+                                    <h4>1. click on Confrim </h4>
                                     <br>
                                     <h4>
-                                        3. Chart with us on the Chart Us Button to complete your transaction.
+                                        2. Chart with us on the Chart Us Button to complete your withdrawal.
                                     </h4>
                                     <br>
-                                    <h4>Transaction Id:: {{ $trans->transaction_id }}</h4>
-                                    <br>
                                     <h6>NOTE:
-                                        FOR IMMEDIATE ACTIVATION OF PLAN AND CREDITING OF WALLET,KINDLY CLICK ON CHART US BUTTON.
+                                        FOR QUICK WITHDRAWAL,KINDLY CLICK ON THE  CHART US BUTTON.
                                     </h6>
                                     <br>
-                                    <div class="col-md-6 mb-2" style="margin-right: 50px;">
-                                        <h4>Bitcoin(BEP20)</h4>
-                                        <div class="input-group">
-
-                                            <input type="text" name="text" class="form-control" id="referralURL"
-                                                value="1HKPH8R5vb2KGZSVu7npfg2GhgJYgXjk6u" readonly>
-                                            &ensp;
-                                            <div class="input-group-append">
-                                                <span class="input-group-text copytext copyBoard" id="copyBoard"
-                                                    onclick="myFunction()"> <i data-feather="copy"></i> </span>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
 
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-10">
-
-                            </div>
                             <div class="col-md-2  ">
-                                <form action="{{ route('congrats.pay', $trans) }}"
+                                <form action=""
                                     method="POST">@csrf
-
-
-                                    @if ($trans->status != 'paid')
+                                    @if ($withdraw->status != 'paid')
                                         <button class="btn btn-success" type="submit">Confirm</button>
                                     @endif
 

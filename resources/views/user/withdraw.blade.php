@@ -6,14 +6,14 @@
                 <div class="row">
                     <div class="col-12 col-sm-6">
                         <h3>
-                            Deposit
+                           WITHDRAWAL
                         </h3>
                     </div>
                     <div class="col-12 col-sm-6">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a class="home-item" href="index.html"><i data-feather="home"></i></a>
+                            <li class="breadcrumb-item"><a class="home-item" href="{{route('home')}}"><i data-feather="home"></i></a>
                             </li>
-                            <li class="breadcrumb-item">Deposit</li>
+                            <li class="breadcrumb-item">Withdrawal</li>
                             <li class="breadcrumb-item active">Page</li>
                         </ol>
                     </div>
@@ -41,8 +41,8 @@
                             <h5 class="font-primary" style="margin-top:10px;">Bitcoin(BTC)</h5>
                             <br>
                             <br>
-                            <a class="btn btn-secondary" href="{{ route('depositbtc.details') }}" style="margin-left:20px;">
-                                Deposit Now
+                            <a class="btn btn-secondary" href="{{ route('withdrawbtc.details') }}" style="margin-left:20px;">
+                                Withdraw Now
                             </a>
                         </div>
                         <div class="card-body p-0">
@@ -70,8 +70,8 @@
                             <h5 class="font-primary" style="margin-top:10px;">Ethereum(ETH)</h5>
                             <br>
                             <br>
-                            <a class="btn btn-secondary" href="{{route('depositeth.details')}}" style="margin-left:20px;">
-                                Deposit Now
+                            <a class="btn btn-secondary" href="{{route('withdraweth.details')}}" style="margin-left:20px;">
+                                Withdraw Now
                             </a>
                         </div>
                         <div class="card-body p-0">
@@ -99,8 +99,8 @@
                             <h5 class="font-primary" style="margin-top:10px;">USDT(TRC20)</h5>
                             <br>
                             <br>
-                            <a class="btn btn-secondary" href="{{route('depositusdt.details')}}" style="margin-left:20px;">
-                                Deposit Now
+                            <a class="btn btn-secondary" href="{{route('withdrawusdt.details')}}" style="margin-left:20px;">
+                                Withdraw Now
                             </a>
                         </div>
                         <div class="card-body p-0">
@@ -127,7 +127,7 @@
                             <br>
                             <br>
                             <a class="btn btn-secondary" href="" style="margin-left:20px;">
-                                Deposit Now
+                                Withdraw Now
                             </a>
                         </div>
                         <div class="card-body p-0">

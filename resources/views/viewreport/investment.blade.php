@@ -49,11 +49,11 @@
                                                                     <div class="product-box row">
                                                                         <center>
                                                                             <div class="rating">
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
@@ -81,7 +81,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="{{ route('make.payment') }}">
+                                                                                href="{{ route('deposit.now') }}">
                                                                                 Invest Now
                                                                             </a>
                                                                         </center>
@@ -93,11 +93,11 @@
                                                     <div class="product-details">
                                                         <center>
                                                             <div class="rating">
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
@@ -124,7 +124,7 @@
                                                                 <h6>Total 20% + Capital</h6>
                                                             </div>
                                                             <br>
-                                                            <a class="btn btn-secondary" href="{{ route('make.payment') }}">
+                                                            <a class="btn btn-secondary" href="{{ route('deposit.now') }}">
                                                                 Invest Now
                                                             </a>
                                                         </center>
@@ -143,11 +143,11 @@
                                                                     <div class="product-box row">
                                                                         <center>
                                                                             <div class="rating">
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
@@ -175,7 +175,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="{{ route('pro.plan') }}">
+                                                                                href="{{ route('deposit.now') }}">
                                                                                 Invest Now
                                                                             </a>
                                                                         </center>
@@ -187,11 +187,11 @@
                                                     <div class="product-details">
                                                         <center>
                                                             <div class="rating">
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
@@ -218,7 +218,7 @@
                                                                 <h6>Total 25% + Capital</h6>
                                                             </div>
                                                             <br>
-                                                            <a class="btn btn-secondary" href="{{ route('pro.plan') }}">
+                                                            <a class="btn btn-secondary" href="{{ route('deposit.now') }}">
                                                                 Invest Now
                                                             </a>
                                                         </center>
@@ -240,11 +240,11 @@
                                                                     <div class="product-box row">
                                                                         <center>
                                                                             <div class="rating">
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
@@ -272,7 +272,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="{{ route('deluxe.plan') }}">
+                                                                                href="{{ route('deposit.now') }}">
                                                                                 Invest Now
                                                                             </a>
                                                                         </center>
@@ -284,11 +284,11 @@
                                                     <div class="product-details">
                                                         <center>
                                                             <div class="rating">
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
@@ -316,7 +316,7 @@
                                                             </div>
                                                             <br>
                                                             <a class="btn btn-secondary"
-                                                                href="{{ route('deluxe.plan') }}">
+                                                                href="{{ route('deposit.now') }}">
                                                                 Invest Now
                                                             </a>
                                                         </center>
@@ -338,11 +338,11 @@
                                                                     <div class="product-box row">
                                                                         <center>
                                                                             <div class="rating">
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
@@ -370,7 +370,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="{{ route('gold.plan') }}">
+                                                                                href="{{ route('deposit.now') }}">
                                                                                 Invest Now
                                                                             </a>
                                                                         </center>
@@ -382,11 +382,11 @@
                                                     <div class="product-details">
                                                         <center>
                                                             <div class="rating">
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
@@ -413,7 +413,7 @@
                                                                 <h6>Total 40% + Capital</h6>
                                                             </div>
                                                             <br>
-                                                            <a class="btn btn-secondary" href="{{ route('gold.plan') }}">
+                                                            <a class="btn btn-secondary" href="{{ route('deposit.now') }}">
                                                                 Invest Now
                                                             </a>
                                                         </center>
@@ -435,11 +435,11 @@
                                                                     <div class="product-box row">
                                                                         <center>
                                                                             <div class="rating">
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
@@ -467,7 +467,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="{{ route('business.plan') }}">
+                                                                                href="{{ route('deposit.now') }}">
                                                                                 Invest Now
                                                                             </a>
                                                                         </center>
@@ -479,11 +479,11 @@
                                                     <div class="product-details">
                                                         <center>
                                                             <div class="rating">
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
@@ -511,7 +511,7 @@
                                                             </div>
                                                             <br>
                                                             <a class="btn btn-secondary"
-                                                                href="{{ route('business.plan') }}">
+                                                                href="{{ route('deposit.now') }}">
                                                                 Invest Now
                                                             </a>
                                                         </center>
@@ -533,11 +533,11 @@
                                                                     <div class="product-box row">
                                                                         <center>
                                                                             <div class="rating">
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
-                                                                                <i data-feather="star" style="color:green;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                                <i data-feather="star" style="color:yellow;"></i>
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
@@ -565,7 +565,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="{{ route('carhouse.plan') }}">
+                                                                                href="{{ route('deposit.now') }}">
                                                                                 Invest Now
                                                                             </a>
                                                                         </center>
@@ -577,11 +577,11 @@
                                                     <div class="product-details">
                                                         <center>
                                                             <div class="rating">
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
-                                                                <i data-feather="star" style="color:green;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
+                                                                <i data-feather="star" style="color:yellow;"></i>
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
@@ -609,7 +609,7 @@
                                                             </div>
                                                             <br>
                                                             <a class="btn btn-secondary"
-                                                                href="{{ route('carhouse.plan') }}">
+                                                                href="{{ route('deposit.now') }}">
                                                                 Invest Now
                                                             </a>
                                                         </center>

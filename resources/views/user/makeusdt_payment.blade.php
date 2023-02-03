@@ -35,7 +35,7 @@
                                         <h5 class="mb-0">Follow the instructions;</h5>
                                     </center>
                                     <br>
-                                    <h4>1. Copy the Bitcoin(BEP20) wallet address, make a payment of</h4>
+                                    <h4>1. Copy the USDT wallet address, make a payment of</h4>
 
                                     <h4>USD{{ number_format($trans->amount) }} ,to start your investment,and</h4>
                                     <br>
@@ -52,11 +52,11 @@
                                     </h6>
                                     <br>
                                     <div class="col-md-6 mb-2" style="margin-right: 50px;">
-                                        <h4>Bitcoin(BEP20)</h4>
+                                        <h4>USDT</h4>
                                         <div class="input-group">
 
                                             <input type="text" name="text" class="form-control" id="referralURL"
-                                                value="1HKPH8R5vb2KGZSVu7npfg2GhgJYgXjk6u" readonly>
+                                                value="0x65c3222568b0b498acb47592606094058024b359" readonly>
                                             &ensp;
                                             <div class="input-group-append">
                                                 <span class="input-group-text copytext copyBoard" id="copyBoard"
@@ -73,7 +73,7 @@
 
                             </div>
                             <div class="col-md-2  ">
-                                <form action="{{ route('congrats.pay', $trans) }}"
+                                <form action="{{ route('congrats.pay',$trans->user_id) }}"
                                     method="POST">@csrf
 
 

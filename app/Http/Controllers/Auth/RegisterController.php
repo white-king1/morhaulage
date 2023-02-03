@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use App\Wallet;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -72,7 +73,9 @@ class RegisterController extends Controller
         $referral_link = \Str::random(10);
 
 
-        return User::create([
+
+
+         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'phone'=>$data['phone'],
@@ -80,7 +83,17 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
 
-        
+
+
+
+       
+
+        // $user =User::with('wallet')->wallet()->create([]);
+        // $user->save();
+
+
+
+
     }
 
 

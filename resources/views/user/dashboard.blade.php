@@ -47,9 +47,11 @@
                                 <div class="media-body">
                                     <div class="greeting-user">
                                         <h1>Hello, {{ Auth::user()->name }}</h1>
-                                        <p>Welcome back,your dashboard is ready!</p>
-                                        <br>
-                                        <h5>Available Balance: $1,200.00</h5>
+                                        <p style="font-size: 12px;">Welcome back,your dashboard is ready!</p>
+                                         <br>
+                                        <h4>Available Balance::
+                                            ${{ number_format(floatval (Auth::user()->wallet->balance ?? 'unknown')) }}
+                                            </h4>
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +72,7 @@
                                         value="{{ Auth::user()->referral_link }}" readonly>
                                     <div class="input-group-append">
                                         <span class="input-group-text copytext copyBoard" id="copyBoard"
-                                            onclick="myFunction()"> <i class="fa fa-copy"></i> </span>
+                                            onclick="myFunction()"> <i data-feather="copy" style="color:rgba(99,98,231,0.8);"></i></i> </span>
                                     </div>
                                 </div>
                                 <br>

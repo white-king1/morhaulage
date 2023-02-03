@@ -96,9 +96,29 @@
                 </div>
             </div>
         </div>
-<br>
+        <br>
         {{-- ADDING GOOGLE TRANSALTE TO A WEB PAGE USING HTML,CSS AND JAVASCRIPT BEGINS --}}
         <style type='text/css'>
+            .goog-logo-link {
+                display: none !important;
+
+            }
+
+            .goog-te-gadget {
+                color: transparent !important;
+                padding-left: 10px;
+
+            }
+
+            .goog-te-gadget .goog-te-combo {
+                color: blue !important;
+
+            }
+        </style>
+        <div id="google_translate_element"></div>
+
+
+        {{-- <style type='text/css'>
             iframe.goog-te-banner-frame {
                 display: none !important;
             }
@@ -128,15 +148,13 @@
                 color: blue !important;
 
             }
-
-
         </style>
         <style type="text/css">
             .goog-te-combo {
-                max-width: 500% !important;
+                max-width: 100% !important;
                 overflow: scroll !important;
                 box-sizing: border-box !important; //fixes a padding issue
-                height: auto !important; //gets rid of vertical
+                height: 20% !important; //gets rid of vertical
             }
         </style>
         <div class="nav-right">
@@ -152,8 +170,8 @@
 
             <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
             </script>
-        </div>
-{{-- ADDING GOOGLE TRANSALTE TO A WEB PAGE USING HTML,CSS AND JAVASCRIPT ENDS HERE --}}
+        </div> --}}
+        {{-- ADDING GOOGLE TRANSALTE TO A WEB PAGE USING HTML,CSS AND JAVASCRIPT ENDS HERE --}}
 
 
     </header>
@@ -287,6 +305,19 @@
     <script src="assets/js/side-demo.js"></script>
     <script src="assets/js/business-4.js"></script>
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                    pageLanguage: 'en'
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+    cb=googleTranslateElementInit"></script>
+
     <style>
         .whatsapp {
             position: fixed;
@@ -304,8 +335,9 @@
 
     <div class="whatsapp">
         <a href="https://wa.me/+17473205867" target="_blank">
-            <h5><i class="fas fa-whatsapp fa-3x fa-spin" aria-hidden="true"></i></h5>
-
+            <h5><i data-feather="message-circle" style="color:yellow;"></i></h5>
+        </a>
+    </div>
 
 
 

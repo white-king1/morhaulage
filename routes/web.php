@@ -56,4 +56,42 @@ Route::post('/postbtc_payment', 'DepositController@postbtcPay')->name('postbtc.p
 Route::get('/makebtc_payment/{trans}', 'DepositController@makebtcPay')->name('makebtc.payment');
 
 
+// ETH DEPOSIT ROUTE
+Route::get('/depositeth_details', 'DepositController@depositEth')->name('depositeth.details');
+Route::post('/posteth_payment', 'DepositController@postethPay')->name('posteth.payment');
+Route::get('/makeeth_payment/{trans}', 'DepositController@makeethPay')->name('makeeth.payment');
 
+
+// USDT DEPOSIT ROUTE
+Route::get('/depositusdt_details', 'DepositController@depositUsdt')->name('depositusdt.details');
+Route::post('/postusdt_payment', 'DepositController@postusdtPay')->name('postusdt.payment');
+Route::get('/makeusdt_payment/{trans}', 'DepositController@makeusdtPay')->name('makeusdt.payment');
+
+
+// SUCCESSFUL PAYMENT ROUTE
+Route::post('/congrats_payment/{trans}','DepositController@congratsPay')->name('congrats.pay');
+Route::get('chart_us', 'DepositController@chartUs')->name('chart.us');
+
+// WITHDRAWAL ROUTE
+Route::get('/withdraw','WithdrawController@withdraw')->name('withdraw.now');
+// BTC WITHDRAWAL ROUTE
+Route::get('/withdrawbtc_details', 'WithdrawController@withdrawbtcDetails')->name('withdrawbtc.details');
+Route::post('/postbtc_withdraw', 'WithdrawController@postbtcWithdraw')->name('postbtc.withdraw');
+Route::get('/makebtc_withdraw/{withdraw}', 'WithdrawController@makebtcWithdraw')->name('makebtc.withdraw');
+
+
+// ETH WITHDRAWAL ROUTE
+Route::get('/withdraweth_details', 'WithdrawController@withdrawEth')->name('withdraweth.details');
+Route::post('/posteth_withdraw', 'WithdrawController@postethWithdraw')->name('posteth.withdraw');
+Route::get('/makeeth_withdraw/{trans}', 'DepositController@makeethWithdraw')->name('makeeth.withdraw');
+
+
+// USDT WITHDRAWAL ROUTE
+Route::get('/withdrawusdt_details', 'WithdrawController@withdrawUsdt')->name('withdrawusdt.details');
+Route::post('/postusdt_withdraw', 'DepositController@postusdtWithdraw')->name('postusdt.withdraw');
+Route::get('/makeusdt_withdraw/{trans}', 'DepositController@makeusdtWithdraw')->name('makeusdt.withdraw');
+
+
+// SUCCESSFUL WITHDRAWAL ROUTE
+Route::post('/congrats_payment/{$trans}','DepositController@congratsPay')->name('congrats.pay');
+Route::get('chart_us', 'DepositController@chartUs')->name('chart.us');
