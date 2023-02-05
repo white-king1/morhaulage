@@ -21,6 +21,9 @@ class CreateUsersTable extends Migration
             $table->string('phone')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->double('balance')->default('5');
+            $table->enum('status', ['approved','restricted','deleted'])->default('approved');
+            $table->enum('usertype',["user", "admin"])->default('user');
             $table->rememberToken();
             $table->timestamps();
         });

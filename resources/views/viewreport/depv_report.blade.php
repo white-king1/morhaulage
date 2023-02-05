@@ -33,7 +33,7 @@
 
                                     </div>
                                     <div class="col-md-10" >
-                                       <a  href="">
+                                       <a  href="{{route('deposit.now')}}">
                                        <button class="btn btn-primary" style="padding-right: 30px;">Deposit</button>
                                    </a>
                                     </div>
@@ -65,22 +65,23 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-
+                                        @foreach ($depv as $trans )
                                         <tr>
                                             <td>
-                                                dkjkjskjkj1237
+                                                {{$trans->transaction_id}}
                                             </td>
                                             <td class="img-content-box">
-                                                <h6>$1,200.00</h6>
+                                                <h6>${{number_format($trans->amount)}}</h6>
                                             </td>
                                             <td>
-                                                <h6>Pending</h6>
+                                                <h6>{{$trans->status}}</h6>
 
                                             </td>
                                             <td>
-                                                <div class="badge badge-light-primary">28th January 2023</div>
+                                                <div class="badge badge-light-primary">{{ $trans->created_at }}</div>
                                             </td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

@@ -20,7 +20,7 @@
             </div>
         </div>
         <!-- Container-fluid starts-->
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-md-9">
 
             </div>
@@ -30,7 +30,7 @@
                 </a>
             </div>
         </div>
-        <br>
+        <br> --}}
         <div class="container-fluid default-dash">
             <div class="col-lg-12">
                 <div class="dashboard-main">

@@ -54,6 +54,24 @@
                                         <input class="form-control" name="withdraw_amount" type="text" placeholder="Amount"
                                             required>
                                     </div>
+                                    <div class="col-md-6 mb-2" style="margin-left: 20px;">
+                                        <label>
+                                            <h3>Referral Code</h3>
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="text" name="referral_link" class="form-control" id="referralURL"
+                                                value="{{ Auth::user()->referral_link }}" readonly>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text copytext copyBoard" id="copyBoard"
+                                                    onclick="myFunction()"> <i data-feather="copy" style="color:rgba(99,98,231,0.8);"></i></i> </span>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input class="form-control" name="crypto_currency" type="text" placeholder="BITCOIN (BEP20)"
+                                            required>
+                                    </div>
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleFormControlSelect9">BITCOIN (BEP20) WALLET ADDRESS</label>
                                         <input class="form-control" name="wallet_address" type="text" placeholder="WALLET ADDRESS"

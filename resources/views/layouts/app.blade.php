@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Morhaulage Page</title>
+    <title>Morhaulage Investment</title>
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Css Fils -->
@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="assets/css/side-demo.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/business-4.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- Smartsupp Live Chat script -->
     <script type="text/javascript">
         var _smartsupp = _smartsupp || {};
@@ -81,8 +85,10 @@
                             <li><a class="nav-link" href="#apbc_about">About</a></li>
                             <li><a class="nav-link" href="#apbc_service">Service</a></li>
                             <li><a class="nav-link" href="#apbc_contact">Contact</a></li>
+
                             <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
                             <li><a class="nav-link" href="{{ route('register') }}">Signup</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -316,7 +322,7 @@
     </script>
 
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
-    cb=googleTranslateElementInit"></script>
+        cb=googleTranslateElementInit"></script>
 
     <style>
         .whatsapp {

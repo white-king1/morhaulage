@@ -15,8 +15,6 @@ class DashboardController extends Controller
         $wallet = Wallet::where('user_id', Auth::user()->id)->exists();
 
         if ( $wallet == false) {
-
-
            $wallet = new Wallet();
            $wallet->user_id = Auth::user()->id;
            $wallet->referral_code = Auth::user()->referral_link;

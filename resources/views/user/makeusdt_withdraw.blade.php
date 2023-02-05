@@ -26,49 +26,38 @@
                         <div class="card-header card-no-border">
                             <div class="media media-dashboard">
                                 <div class="media-body">
-                                    <center>
-                                        <h4>You requested to make a withdrawal of USD{{ number_format($trans->amount) }}
-                                            kindly,</h4>
-                                    </center>
+
+                                    <h4>
+                                        You requested to make a withdrawal
+                                        of::USD{{ number_format($withdraw->withdraw_amount) }},<br>
+                                        To your USDT wallet address:: {{ $withdraw->wallet_address }}.
+                                    </h4>
+
                                     <br>
                                     <center>
                                         <h5 class="mb-0">Follow the instructions;</h5>
                                     </center>
                                     <br>
-                                    <h4>1. Paste your USDT wallet address</h4>
-                                    <br>
-                                    <h4>2.click on Confrim</h4>
+                                    <h4>1. click on Confrim </h4>
                                     <br>
                                     <h4>
-                                        3. Chart with us on the Chart Us Button to complete your withdrawal.
+                                        2. Chart with us on the Chart Us Button to complete your withdrawal.
                                     </h4>
                                     <br>
                                     <h6>NOTE:
-                                        FOR QUICK WITHDRAWAL,KINDLY CLICK ON THE  CHART US BUTTON.
+                                        FOR QUICK WITHDRAWAL,KINDLY CLICK ON THE CHART US BUTTON.
                                     </h6>
                                     <br>
-                                    <div class="col-md-6 mb-2" style="margin-right: 50px;">
-                                        <h4></h4>
-                                        <div class="input-group">
-                                            <div class="col-md-6">
-                                                <div>
-                                                    <label class="form-label" for="exampleFormControlTextarea4">ITEM/ITEMS
-                                                        USDT </label>
-                                                    <input class="form-control" name="description" id="exampleFormControlTextarea4"
-                                                        type="text" placeholder="Paste Your Wallet Address" rows="3" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
-
                             </div>
                         </div>
                         <div class="row">
+                            <div class="col-md-10">
+
+                            </div>
                             <div class="col-md-2  ">
-                                <form action=""
-                                    method="POST">@csrf
-                                    @if ($trans->status != 'paid')
+                                <form action="{{ route('congrats.withdraw', $withdraw) }}" method="POST">@csrf
+                                    @if ($withdraw->status != 'paid')
                                         <button class="btn btn-success" type="submit">Confirm</button>
                                     @endif
 

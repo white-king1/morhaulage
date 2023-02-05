@@ -9,7 +9,8 @@
                     </div>
                     <div class="col-12 col-sm-6">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"> <a class="home-item" href="{{route('home')}}"><i data-feather="home"></i></a>
+                            <li class="breadcrumb-item"> <a class="home-item" href="{{ route('home') }}"><i
+                                        data-feather="home"></i></a>
                             </li>
                             <li class="breadcrumb-item"> Dashboard</li>
                             <li class="breadcrumb-item active"> Page</li>
@@ -48,10 +49,10 @@
                                     <div class="greeting-user">
                                         <h1>Hello, {{ Auth::user()->name }}</h1>
                                         <p style="font-size: 12px;">Welcome back,your dashboard is ready!</p>
-                                         <br>
+                                        <br>
                                         <h4>Available Balance::
-                                            ${{ number_format(floatval (Auth::user()->wallet->balance ?? 'unknown')) }}
-                                            </h4>
+                                            ${{ number_format(floatval(Auth::user()->wallet->balance ?? 'unknown')) }}
+                                        </h4>
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +73,8 @@
                                         value="{{ Auth::user()->referral_link }}" readonly>
                                     <div class="input-group-append">
                                         <span class="input-group-text copytext copyBoard" id="copyBoard"
-                                            onclick="myFunction()"> <i data-feather="copy" style="color:rgba(99,98,231,0.8);"></i></i> </span>
+                                            onclick="myFunction()"> <i data-feather="copy"
+                                                style="color:rgba(99,98,231,0.8);"></i></i> </span>
                                     </div>
                                 </div>
                                 <br>
@@ -101,27 +103,28 @@
                                                                     <div class="product-box row">
 
                                                                         <center>
-                                                                            <div class="rating">
-
-                                                                                <i class="fa fa-star"></i><i
-                                                                                    class="fa fa-star"></i><i
-                                                                                    class="fa fa-star"></i><i
-                                                                                    class="fa fa-star"></i><i
-                                                                                    class="fa fa-star"></i>
-                                                                            </div>
-                                                                            <br>
-                                                                            <div class="product-price">
-                                                                                <h4>Deposit Wallet</h4>
-                                                                            </div>
-                                                                            <br>
-                                                                            <div class="product-price">
-                                                                                <h2>$5</h2>
-                                                                            </div>
-                                                                            <br>
-                                                                            <a class="btn btn-secondary"
-                                                                                href="{{route('depv.report')}}">
-                                                                                View Report
-                                                                            </a>
+                                                                            <form action="{{route('depv.form')}}" method="POST">
+                                                                                @csrf
+                                                                                <div class="rating">
+                                                                                    <i class="fa fa-star"></i><i
+                                                                                        class="fa fa-star"></i><i
+                                                                                        class="fa fa-star"></i><i
+                                                                                        class="fa fa-star"></i><i
+                                                                                        class="fa fa-star"></i>
+                                                                                </div>
+                                                                                <br>
+                                                                                <div class="product-price">
+                                                                                    <h4>Deposit Wallet</h4>
+                                                                                </div>
+                                                                                <br>
+                                                                                <div class="product-price">
+                                                                                    <h2>$5</h2>
+                                                                                </div>
+                                                                                <br>
+                                                                                <a class="btn btn-secondary">
+                                                                                    View Report
+                                                                                </a>
+                                                                            </form>
                                                                         </center>
                                                                     </div>
                                                                 </div>
@@ -142,12 +145,13 @@
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
-                                                                <h2>$5</h2>
+                                                                <h2>${{ number_format(floatval(Auth::user()->wallet->balance ?? 'unknown')) }}
+                                                                </h2>
                                                             </div>
                                                             <br>
 
 
-                                                            <a class="btn btn-secondary" href="{{route('depv.report')}}">
+                                                            <a class="btn btn-secondary" href="{{ route('depv.report') }}">
                                                                 View Report
                                                             </a>
                                                         </center>
@@ -180,11 +184,12 @@
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
-                                                                                <h2>$0</h2>
+                                                                                <h2>${{ number_format(floatval(Auth::user()->trans->amount ?? 'unknown')) }}
+                                                                                </h2>
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="{{route('investp.report')}}">
+                                                                                href="{{ route('investp.report') }}">
                                                                                 View Report
                                                                             </a>
                                                                         </center>
@@ -207,12 +212,14 @@
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
-                                                                <h2>$0</h2>
+                                                                <h2>${{ number_format(floatval(Auth::user()->trans->amount ?? 'unknown')) }}
+                                                                </h2>
                                                             </div>
                                                             <br>
 
 
-                                                            <a class="btn btn-secondary" href="{{route('investp.report')}}">
+                                                            <a class="btn btn-secondary"
+                                                                href="{{ route('investp.report') }}">
                                                                 View Report
                                                             </a>
                                                         </center>
@@ -245,11 +252,12 @@
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
-                                                                                <h2>$0</h2>
+                                                                                <h2>${{ number_format(floatval(Auth::user()->trans->amount ?? 'unknown')) }}
+                                                                                </h2>
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="{{route('investp.report')}}">
+                                                                                href="{{ route('investp.report') }}">
                                                                                 View Report
                                                                             </a>
                                                                         </center>
@@ -272,12 +280,14 @@
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
-                                                                <h2>$0</h2>
+                                                                <h2>${{ number_format(floatval(Auth::user()->trans->amount ?? 'unknown')) }}
+                                                                </h2>
                                                             </div>
                                                             <br>
 
 
-                                                            <a class="btn btn-secondary" href="{{route('investp.report')}}">
+                                                            <a class="btn btn-secondary"
+                                                                href="{{ route('investp.report') }}">
                                                                 View Report
                                                             </a>
                                                         </center>
@@ -313,8 +323,7 @@
                                                                                 <h2>0</h2>
                                                                             </div>
                                                                             <br>
-                                                                            <a class="btn btn-secondary"
-                                                                                href="">
+                                                                            <a class="btn btn-secondary" href="">
                                                                                 View Report
                                                                             </a>
                                                                         </center>
@@ -385,7 +394,8 @@
                                                                 class="fa fa-file-archive-o f-36 txt-warning"></i>
                                                             <div class="media-body ms-3">
                                                                 <h4 class="mb-0">Total Deposit</h4>
-                                                                <h1>$0.00</h1>
+                                                                <h1>${{ number_format(floatval(Auth::user()->trans->amount ?? 'unknown')) }}
+                                                                </h1>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -393,7 +403,8 @@
                                                         <div class="media"><i class="fa fa-folder f-36 txt-warning"></i>
                                                             <div class="media-body ms-3">
                                                                 <h4 class="mb-0">Total Withdraw</h4>
-                                                                <h1>$0.00</h1>
+                                                                <h1>${{ number_format(floatval(Auth::user()->withdraw->withdraw_amount ?? 'unknown')) }}
+                                                                </h1>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -402,7 +413,8 @@
                                                                 class="fa fa-file-archive-o f-36 txt-warning"></i>
                                                             <div class="media-body ms-3">
                                                                 <h4 class="mb-0">Last Deposit</h4>
-                                                                <h1>$0.00</h1>
+                                                                <h1>${{ number_format(floatval(Auth::user()->trans->amount ?? 'unknown')) }}
+                                                                </h1>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -410,7 +422,8 @@
                                                         <div class="media"><i class="fa fa-folder f-36 txt-warning"></i>
                                                             <div class="media-body ms-3">
                                                                 <h4 class="mb-0">Last Withdraw</h4>
-                                                                <h1>$0.00</h1>
+                                                                <h1>${{ number_format(floatval(Auth::user()->withdraw->withdraw_amount ?? 'unknown')) }}
+                                                                </h1>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -422,8 +435,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>

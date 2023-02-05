@@ -15,8 +15,9 @@ class CreateWithdrawsTable extends Migration
     {
         Schema::create('withdraws', function (Blueprint $table) {
             $table->id();
-            $table->string('referral_code')->nullable();;
-            $table->string('crypto_currency')->nullable();;
+            $table->integer('user_id');
+            $table->string('referral_link');
+            $table->string('crypto_currency')->nullable();
             $table->string('wallet_address');
             $table->integer('withdraw_amount');
             $table->enum('status', ['pending','success','failed','paid'])->default('pending');

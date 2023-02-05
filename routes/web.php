@@ -25,6 +25,21 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'MainController@index')->name('welcome');
 
+// FOR THE ADMIN DASHBOARD
+Route::get('/dashboard', 'HomeController@redirect')->name('redirect');
+Route::get('/admin-dashboard', 'AdminDashboardController@admin')->name('admin');
+
+// ADMIN->USERS NAV-BAR
+Route::get('/all_users','AllusersController@allUsers')->name('all.users');
+Route::get('/all_deposits','AlldepositsController@allDeposits')->name('all.deposits');
+Route::get('/all_withdrawals','AllwithdrawalsController@allWithdrawals')->name('all.withdrawals');
+
+// ADMIN TRANSFERS OF FUNDS
+Route::get('/transfer','TransferController@newTransafer')->name('new.transfer');
+Route::post('/transfer_details','TransferController@transferDetails')->name('transfer.details');
+Route::get('/transfer_successful','TransferController@transferSuccessful')->name('transfer.successful');
+// THE ADMIN DASHBOARD ENDS HERE
+
 // USERS DASHBOARD ROUTE BEGIN
 Route::middleware(['auth'])->prefix('user')->group(function () {
 Route::get('/', 'DashboardController@index')->name('user.dashboard');
@@ -34,7 +49,9 @@ Route::get('/', 'DashboardController@index')->name('user.dashboard');
 // Route::get('/user_/{place}', 'DashboardController@userView')->name('user.view');
 
 // REPORT VIEW ROUTE
-Route::get('/depv_repoRt', 'DepvreportController@depvReport')->name('depv.report');
+Route::post('/depv_form', 'DepvreportController@depvForm')->name('depv.form');
+Route::get('/depv_report', 'DepvreportController@depvReport')->name('depv.report');
+
 Route::get('/investp_repoRt', 'DepvreportController@investpReport')->name('investp.report');
 
 // INVESTMENT ROUTE
@@ -83,15 +100,18 @@ Route::get('/makebtc_withdraw/{withdraw}', 'WithdrawController@makebtcWithdraw')
 // ETH WITHDRAWAL ROUTE
 Route::get('/withdraweth_details', 'WithdrawController@withdrawEth')->name('withdraweth.details');
 Route::post('/posteth_withdraw', 'WithdrawController@postethWithdraw')->name('posteth.withdraw');
-Route::get('/makeeth_withdraw/{trans}', 'DepositController@makeethWithdraw')->name('makeeth.withdraw');
+Route::get('/makeeth_withdraw/{withdraw}', 'WithdrawController@makeethWithdraw')->name('makeeth.withdraw');
 
 
 // USDT WITHDRAWAL ROUTE
 Route::get('/withdrawusdt_details', 'WithdrawController@withdrawUsdt')->name('withdrawusdt.details');
-Route::post('/postusdt_withdraw', 'DepositController@postusdtWithdraw')->name('postusdt.withdraw');
-Route::get('/makeusdt_withdraw/{trans}', 'DepositController@makeusdtWithdraw')->name('makeusdt.withdraw');
+Route::post('/postusdt_withdraw', 'WithdrawController@postusdtWithdraw')->name('postusdt.withdraw');
+Route::get('/makeusdt_withdraw/{withdraw}', 'WithdrawController@makeusdtWithdraw')->name('makeusdt.withdraw');
 
 
 // SUCCESSFUL WITHDRAWAL ROUTE
-Route::post('/congrats_payment/{$trans}','DepositController@congratsPay')->name('congrats.pay');
-Route::get('chart_us', 'DepositController@chartUs')->name('chart.us');
+Route::post('/congrats_withdraw/{withdraw}','WithdrawController@congratsWithdraw')->name('congrats.withdraw');
+Route::get('insufficient_funds', 'WithdrawController@insufficientFunds')->name('insufficient.funds');
+
+// CHANGE PASSWORD ROUTE
+Route::get('/change_password','ChangepController@changePassword')->name('change.password');

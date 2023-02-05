@@ -2,7 +2,6 @@
 @section('content')
 
     <main>
-
         <!-- Mobile Navigation -->
         <div class="apbc-mobile-navigation">
             <div class="apbc-mobile-menu-wrapper" style="margin-left:50px;">
@@ -48,12 +47,9 @@
             </div>
         </div>
         <!-- Header Sidebar Info End -->
-        <br>
-        <br>
-        <br>
-        <br>
+
         <!-- Hero Slider Area -->
-        <div class="apbc-hero-slider" id="apbc_banner">
+        <div class="apbc-hero-slider" id="apbc_banner" style="margin-top: 10px;">
             <div class="apbc-single-item">
                 <span class="apbc-slide-shape-2"><img src="assets/img/business-4/slider/shape-2.png" alt=""></span>
 
@@ -65,12 +61,13 @@
                             <div class="apbc-slide-left">
                                 <div class="apbc-headline">
                                     <h4 style="font-size:4vw; color:white;">The Bigest Investment Company!</h4>
-                                </div>
-                                <div class="apbc-pera-txt">
-                                    <p style="color:white; font-size:4vw;">Morhaulage Investment has taken the world's toughest
+                                    <p style="color:white; font-size:3.5vw;">Morhaulage Investment has taken the world's toughest
                                         investments challanges
                                         <br>and turned them into seamless,streamlined and affordable minimum.
                                     </p>
+                                </div>
+                                <div class="apbc-pera-txt">
+
                                 </div>
                             </div>
                         </div>
@@ -87,8 +84,7 @@
                             <div class="apbc-slide-left">
                                 <div class="apbc-headline">
                                     <h4 style="font-size:5vw; color:white;">Investments, made at an affordable minimum!</h4>
-                                    <br>
-                                    <p style="color:white; font-size:4vw;">Morhaulage Investment is the key to Financial Growth and
+                                    <p style="color:white; font-size:3.5vw;">Morhaulage Investment is the key to Financial Growth and
                                         Success.</p>
                                 </div>
 

@@ -46,6 +46,13 @@
     <link id="color" rel="stylesheet" href="../assets_dashboard/css/color-1.css" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/responsive.css">
+        {{--LOGO ON THE WEBSITE URL  --}}
+        <link rel="apple-touch-icon" sizes="180x180" href="ssets_dashboard/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets_dashboard/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets_dashboard/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+    {{-- SMART CHART SCRIPT CODE --}}
     <script type="text/javascript">
         var _smartsupp = _smartsupp || {};
         _smartsupp.key = '383cb9122ee084918d26efe793d807f41a5472af';
@@ -89,7 +96,7 @@
                 <div class="header-wrapper row m-0">
                     <div class="header-logo-wrapper col-auto p-0">
                         <div class="logo-wrapper"><a href="index.html"><img class="img-fluid"
-                                    src="/assets_dashboard/images/logo/Logz.png" alt=""></a></div>
+                                    src="/assets_dashboard/images/new_Logo.png" alt=""></a></div>
                         <div class="toggle-sidebar">
                             <div class="status_toggle sidebar-toggle d-flex">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -247,14 +254,8 @@
                                     <li><a href="user-profile.html"><i data-feather="user"></i><span>Account
                                             </span></a>
                                     </li>
-                                    <li><a href="email-application.html"><i
-                                                data-feather="mail"></i><span>Inbox</span></a>
-                                    </li>
-                                    <li><a href="kanban.html"><i
-                                                data-feather="file-text"></i><span>Taskboard</span></a>
-                                    </li>
                                     <li><a href="edit-profile.html">
-                                            <i data-feather="settings"></i><span>Settings</span></a></li>
+                                            <i data-feather="settings"></i><span>Profile Settings</span></a></li>
                                     <li>
                                         <form action="{{ route('logout') }} " method="post">@csrf
 
@@ -437,173 +438,8 @@
                                                 </g>
                                             </g>
                                         </svg><span>Withdraw</span></a>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
-                                        href="buttons.html">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g>
-                                                <g>
-                                                    <path d="M11.1437 17.8829H4.67114" stroke="#130F26"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M15.205 17.8839C15.205 19.9257 15.8859 20.6057 17.9267 20.6057C19.9676 20.6057 20.6485 19.9257 20.6485 17.8839C20.6485 15.8421 19.9676 15.1621 17.9267 15.1621C15.8859 15.1621 15.205 15.8421 15.205 17.8839Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M14.1765 7.39439H20.6481" stroke="#130F26"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M10.1153 7.39293C10.1153 5.35204 9.43436 4.67114 7.39346 4.67114C5.35167 4.67114 4.67078 5.35204 4.67078 7.39293C4.67078 9.43472 5.35167 10.1147 7.39346 10.1147C9.43436 10.1147 10.1153 9.43472 10.1153 7.39293Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </g>
-                                            </g>
-                                        </svg><span>Transaction Log</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g>
-                                                <g>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M11.9724 20.3683C8.73343 20.3683 5.96643 19.8783 5.96643 17.9163C5.96643 15.9543 8.71543 14.2463 11.9724 14.2463C15.2114 14.2463 17.9784 15.9383 17.9784 17.8993C17.9784 19.8603 15.2294 20.3683 11.9724 20.3683Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M11.9725 11.4488C14.0985 11.4488 15.8225 9.72576 15.8225 7.59976C15.8225 5.47376 14.0985 3.74976 11.9725 3.74976C9.84645 3.74976 8.12245 5.47376 8.12245 7.59976C8.11645 9.71776 9.82645 11.4418 11.9455 11.4488H11.9725Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M18.3622 10.3915C19.5992 10.0605 20.5112 8.93254 20.5112 7.58954C20.5112 6.18854 19.5182 5.01854 18.1962 4.74854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M18.9431 13.5444C20.6971 13.5444 22.1951 14.7334 22.1951 15.7954C22.1951 16.4204 21.6781 17.1014 20.8941 17.2854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M5.58372 10.3915C4.34572 10.0605 3.43372 8.93254 3.43372 7.58954C3.43372 6.18854 4.42772 5.01854 5.74872 4.74854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M5.00176 13.5444C3.24776 13.5444 1.74976 14.7334 1.74976 15.7954C1.74976 16.4204 2.26676 17.1014 3.05176 17.2854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </g>
-                                            </g>
-                                        </svg><span>Referred Users</span></a>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g>
-                                                <g>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M11.9724 20.3683C8.73343 20.3683 5.96643 19.8783 5.96643 17.9163C5.96643 15.9543 8.71543 14.2463 11.9724 14.2463C15.2114 14.2463 17.9784 15.9383 17.9784 17.8993C17.9784 19.8603 15.2294 20.3683 11.9724 20.3683Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M11.9725 11.4488C14.0985 11.4488 15.8225 9.72576 15.8225 7.59976C15.8225 5.47376 14.0985 3.74976 11.9725 3.74976C9.84645 3.74976 8.12245 5.47376 8.12245 7.59976C8.11645 9.71776 9.82645 11.4418 11.9455 11.4488H11.9725Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M18.3622 10.3915C19.5992 10.0605 20.5112 8.93254 20.5112 7.58954C20.5112 6.18854 19.5182 5.01854 18.1962 4.74854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M18.9431 13.5444C20.6971 13.5444 22.1951 14.7334 22.1951 15.7954C22.1951 16.4204 21.6781 17.1014 20.8941 17.2854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M5.58372 10.3915C4.34572 10.0605 3.43372 8.93254 3.43372 7.58954C3.43372 6.18854 4.42772 5.01854 5.74872 4.74854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M5.00176 13.5444C3.24776 13.5444 1.74976 14.7334 1.74976 15.7954C1.74976 16.4204 2.26676 17.1014 3.05176 17.2854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </g>
-                                            </g>
-                                        </svg><span>Referral Commissions</span></a>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g>
-                                                <g>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M21.0003 6.6738C21.0003 8.7024 19.3551 10.3476 17.3265 10.3476C15.2979 10.3476 13.6536 8.7024 13.6536 6.6738C13.6536 4.6452 15.2979 3 17.3265 3C19.3551 3 21.0003 4.6452 21.0003 6.6738Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M10.3467 6.6738C10.3467 8.7024 8.7024 10.3476 6.6729 10.3476C4.6452 10.3476 3 8.7024 3 6.6738C3 4.6452 4.6452 3 6.6729 3C8.7024 3 10.3467 4.6452 10.3467 6.6738Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M21.0003 17.2619C21.0003 19.2905 19.3551 20.9348 17.3265 20.9348C15.2979 20.9348 13.6536 19.2905 13.6536 17.2619C13.6536 15.2333 15.2979 13.5881 17.3265 13.5881C19.3551 13.5881 21.0003 15.2333 21.0003 17.2619Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M10.3467 17.2619C10.3467 19.2905 8.7024 20.9348 6.6729 20.9348C4.6452 20.9348 3 19.2905 3 17.2619C3 15.2333 4.6452 13.5881 6.6729 13.5881C8.7024 13.5881 10.3467 15.2333 10.3467 17.2619Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </g>
-                                            </g>
-                                        </svg><span>Promotional Tools</span></a>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g>
-                                                <g>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M11.9724 20.3683C8.73343 20.3683 5.96643 19.8783 5.96643 17.9163C5.96643 15.9543 8.71543 14.2463 11.9724 14.2463C15.2114 14.2463 17.9784 15.9383 17.9784 17.8993C17.9784 19.8603 15.2294 20.3683 11.9724 20.3683Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M11.9725 11.4488C14.0985 11.4488 15.8225 9.72576 15.8225 7.59976C15.8225 5.47376 14.0985 3.74976 11.9725 3.74976C9.84645 3.74976 8.12245 5.47376 8.12245 7.59976C8.11645 9.71776 9.82645 11.4418 11.9455 11.4488H11.9725Z"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M18.3622 10.3915C19.5992 10.0605 20.5112 8.93254 20.5112 7.58954C20.5112 6.18854 19.5182 5.01854 18.1962 4.74854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M18.9431 13.5444C20.6971 13.5444 22.1951 14.7334 22.1951 15.7954C22.1951 16.4204 21.6781 17.1014 20.8941 17.2854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M5.58372 10.3915C4.34572 10.0605 3.43372 8.93254 3.43372 7.58954C3.43372 6.18854 4.42772 5.01854 5.74872 4.74854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M5.00176 13.5444C3.24776 13.5444 1.74976 14.7334 1.74976 15.7954C1.74976 16.4204 2.26676 17.1014 3.05176 17.2854"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </g>
-                                            </g>
-                                        </svg><span>Profile Settings</span></a>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
-                                        href="internationalization.html">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g>
-                                                <g>
-                                                    <path d="M11.879 14.791V2.75" stroke="#130F26" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M14.795 11.8643L11.879 14.7923L8.96301 11.8643"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M16.3702 7.25879C19.9492 7.58879 21.2502 8.92879 21.2502 14.2588C21.2502 21.3588 18.9392 21.3588 12.0002 21.3588C5.05924 21.3588 2.75024 21.3588 2.75024 14.2588C2.75024 8.92879 4.05024 7.58879 7.63024 7.25879"
-                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </g>
-                                            </g>
-                                        </svg><span>Transfer Balance</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+
+                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="{{route('change.password')}}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g>

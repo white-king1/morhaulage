@@ -52,8 +52,11 @@
                             </div>
                         </div>
                         <div class="row">
+                            <div class="col-md-10">
+
+                            </div>
                             <div class="col-md-2  ">
-                                <form action=""
+                                <form action=" {{ route('congrats.withdraw', $withdraw) }}"
                                     method="POST">@csrf
                                     @if ($withdraw->status != 'paid')
                                         <button class="btn btn-success" type="submit">Confirm</button>
