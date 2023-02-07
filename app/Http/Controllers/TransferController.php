@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Transfer;
+use App\Wallet;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,13 +23,13 @@ class TransferController extends Controller
         $trf->save();
 
 
-        if ($trf->save()) {
-            Auth::user()->wallet->balance += $trf->transfer_amount;
-            Auth::user()->wallet->save();
+        $u = Wallet::where('referral_code', $request->referral_link)->first();
 
-            return view('user.transfer_successful', $trf);
-        }
-        return view('user.transfer');
+        $p= $u->increment('balance',$request->transfer_amount);
+
+        return view('user.transfer_successful',['trf'=>$trf]);
+
+
     }
 
     public function makebtcPay(Transaction $trans)

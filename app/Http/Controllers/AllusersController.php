@@ -11,8 +11,15 @@ class AllusersController extends Controller
 {
     public function allUsers()
     {
-
-        $all_users = User::where('id',Auth::user()->id)->latest()->take(3)->get();
+        $all_users = User::latest()->get();
         return view ('user.all_users', compact('all_users'));
     }
+
+    public function deleteUsers($id)
+    {
+          $user = User::find($id);
+          $user->delete();
+          return redirect()->route('all.users');
+    }
 }
+

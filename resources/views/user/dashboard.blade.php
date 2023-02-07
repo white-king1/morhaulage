@@ -27,21 +27,34 @@
                     <h3 class="caption">{{ Auth::user()->name }}</h3>
                     <p>{{ Auth::user()->email }}</p>
                 </div><!-- single end -->
-                <div class="col-md-3" style="margin-top: 30px;">
-                    <h3 class="caption">Registration Date</h3>
+                <div class="col-md-2" style="margin-top: 30px;">
+                    <h3 class="caption">Register Date</h3>
                     <p>{{ Auth::user()->created_at }}</p>
                 </div><!-- single end -->
-                <div class="col-md-4" style="margin-top: 30px;">
+                <div class="col-md-2" style="margin-top: 30px;">
                     <h3 class="caption">Last Access</h3>
                     <p>{{ Auth::user()->updated_at }}</p>
                 </div><!-- single end -->
+                <div class="col-md-3 mb-2" style="margin-top: 30px;">
+                        <h3 class="caption">Referral Code</h3>
+                    <div class="input-group">
+                        <input type="text" name="text" class="form-control" id="referralURL"
+                            value="{{ Auth::user()->referral_link }}" readonly>
+                        <div class="input-group-append">
+                            <span class="input-group-text copytext copyBoard" id="copyBoard"
+                                onclick="myFunction()"> <i data-feather="copy"
+                                    style="color:rgba(99,98,231,0.8);"></i></i> </span>
+                        </div>
+                    </div>
+                    <br>
+                </div>
             </div>
         </div>
 
         <!-- Container-fluid starts-->
         <div class="container-fluid default-dash">
             <div class="row">
-                <div class="col-xl-6 col-md-6 dash-xl-50">
+                <div class="col-xl-6 col-md-12 dash-xl-100">
                     <div class="card profile-greeting">
                         <div class="card-body">
                             <div class="media">
@@ -61,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 dash-xl-50">
+                {{-- <div class="col-xl-3 col-md-5 dash-xl-50">
                     <div class="card ">
                         <div class="card-body ">
                             <div class="col-md-6 mb-2" style="margin-left: 20px;">
@@ -81,14 +94,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <div class="col-lg-12">
                 <div class="dashboard-main">
                     <div class="container-fluid">
-
-
-
                         <div class="container-fluid product-wrapper">
                             <div class="product-grid">
                                 <div class="product-wrapper-grid">
@@ -403,7 +413,7 @@
                                                         <div class="media"><i class="fa fa-folder f-36 txt-warning"></i>
                                                             <div class="media-body ms-3">
                                                                 <h4 class="mb-0">Total Withdraw</h4>
-                                                                <h1>${{ number_format(floatval(Auth::user()->withdraw->withdraw_amount ?? 'unknown')) }}
+                                                                <h1>$100
                                                                 </h1>
                                                             </div>
                                                         </div>
@@ -422,7 +432,7 @@
                                                         <div class="media"><i class="fa fa-folder f-36 txt-warning"></i>
                                                             <div class="media-body ms-3">
                                                                 <h4 class="mb-0">Last Withdraw</h4>
-                                                                <h1>${{ number_format(floatval(Auth::user()->withdraw->withdraw_amount ?? 'unknown')) }}
+                                                                <h1>$110
                                                                 </h1>
                                                             </div>
                                                         </div>

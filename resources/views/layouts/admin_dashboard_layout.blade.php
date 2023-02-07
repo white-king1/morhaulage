@@ -24,32 +24,32 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/vendors/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/vendors/font-awesome.css">
     <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/vendors/icofont.css">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/vendors/icofont.css">
     <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/vendors/themify.css">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/vendors/themify.css">
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/vendors/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/vendors/flag-icon.css">
     <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/vendors/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/vendors/feather-icon.css">
     <!-- Plugins css start-->
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/vendors/animate.css">
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/vendors/date-picker.css">
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/vendors/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/vendors/date-picker.css">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/vendors/photoswipe.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/vendors/bootstrap.css">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/style.css">
-    <link id="color" rel="stylesheet" href="../admin_assets_dashboard/css/color-1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/style.css">
+    <link id="color" rel="stylesheet" href="/admin_assets_dashboard/css/color-1.css" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="../admin_assets_dashboard/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/responsive.css">
     {{--LOGO ON THE WEBSITE URL  --}}
-    <link rel="apple-touch-icon" sizes="180x180" href="admin_assets_dashboard/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="admin_assets_dashboard/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="admin_assets_dashboard/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/admin_assets_dashboard/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/admin_assets_dashboard/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/admin_assets_dashboard/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
     {{-- SMART CHART SCRIPT CODE --}}
@@ -95,7 +95,7 @@
             <div class="page-header">
                 <div class="header-wrapper row m-0">
                     <div class="header-logo-wrapper col-auto p-0">
-                        <div class="logo-wrapper"><a href="index.html"><img class="img-fluid"
+                        <div class="logo-wrapper"><a href=""><img class="img-fluid"
                                     src="/admin_assets_dashboard/images/logo/Logz.png" alt=""></a></div>
                         <div class="toggle-sidebar">
                             <div class="status_toggle sidebar-toggle d-flex">
@@ -208,7 +208,7 @@
                                         <li>
                                             <div class="media">
                                                 <div class="notification-img bg-light-primary"><img
-                                                        src="../admin_assets_dashboard/images/avtar/man.png"
+                                                        src="/admin_assets_dashboard/images/avtar/man.png"
                                                         alt="">
                                                 </div>
                                                 <div class="media-body">
@@ -350,19 +350,19 @@
             <div class="sidebar-wrapper">
                 <div>
                     <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light"
-                                src="../admin_assets_dashboard/images/logo/small-logo.png" alt=""><img
+                                src="/admin_assets_dashboard/images/logo/Logz.png" alt=""><img
                                 class="img-fluid for-dark"
-                                src="../admin_assets_dashboard/images/logo/small-white-logo.png" alt=""></a>
+                                src="/admin_assets_dashboard/images/logo/Logz.png" alt=""></a>
                         <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                     </div>
                     <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid"
-                                src="../admin_assets_dashboard/images/logo-icon.png" alt=""></a></div>
+                                src="/admin_assets_dashboard/images/logo/Logz.png" alt=""></a></div>
                     <nav class="sidebar-main">
                         <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
                         <div id="sidebar-menu">
                             <ul class="sidebar-links" id="simple-bar">
-                                <li class="back-btn"><a href="index.html"><img class="img-fluid"
-                                            src="../admin_assets_dashboard/images/new_Logo.png" alt=""></a>
+                                <li class="back-btn"><a href="">
+                                    <img class="img-fluid" src="/admin_assets_dashboard/images/logo/Logz.png" alt=""></a>
                                     <div class="mobile-back text-end"><span>Back</span><i
                                             class="fa fa-angle-right ps-2" aria-hidden="true"> </i></div>
                                 </li>

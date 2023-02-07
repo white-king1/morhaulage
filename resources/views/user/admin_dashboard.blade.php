@@ -25,7 +25,7 @@
                 <!-- Container-fluid starts-->
                 <div class="container-fluid default-dash">
                     <div class="row">
-                        <div class="col-xl-6 col-md-6 dash-xl-50">
+                        <div class="col-xl-6 col-md-12 dash-xl-100">
                             <div class="card profile-greeting">
                                 <div class="card-body">
                                     <div class="media">
@@ -44,27 +44,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6 dash-xl-50">
-                            <div class="card pb-0 o-hidden earning-card">
-                                <div class="card-header earning-back"></div>
-                                <div class="card-body p-0">
-                                    <div class="earning-content"><img class="img-fluid" src="../assets/images/avatar.jpg"
-                                            alt=""><a href="blog-single.html">
-                                            <h4>Today's Earning</h4>
-                                        </a><span>(Mon 15 - Sun 21)</span>
-                                        <h6>$573.67</h6>
-                                        <div id="earning-chart"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 dash-xl-50">
-                            <div class="card weekly-column">
-                                <div class="card-body p-0">
-                                    <div id="weekly-chart"> </div>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="col-xl-4 col-md-6 dash-31 dash-xl-50">
                             <div class="card news-update">
                                 <div class="card-header card-no-border">

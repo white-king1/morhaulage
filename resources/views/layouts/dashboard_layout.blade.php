@@ -12,8 +12,8 @@
     <meta name="keywords"
         content="admin template, Zeta admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../assets_dashboard/images/logo/favicon-icon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets_dashboard/images/logo/favicon-icon.png" type="image/x-icon">
+    <link rel="icon" href="/assets_dashboard/images/logo/favicon-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets_dashboard/images/logo/favicon-icon.png" type="image/x-icon">
     <title>Morhaulage dashboard </title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -24,32 +24,32 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/vendors/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/vendors/font-awesome.css">
     <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/vendors/icofont.css">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/vendors/icofont.css">
     <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/vendors/themify.css">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/vendors/themify.css">
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/vendors/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/vendors/flag-icon.css">
     <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/vendors/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/vendors/feather-icon.css">
     <!-- Plugins css start-->
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/vendors/animate.css">
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/vendors/date-picker.css">
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/vendors/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/vendors/date-picker.css">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/vendors/photoswipe.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/vendors/bootstrap.css">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/style.css">
-    <link id="color" rel="stylesheet" href="../assets_dashboard/css/color-1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/style.css">
+    <link id="color" rel="stylesheet" href="/assets_dashboard/css/color-1.css" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="../assets_dashboard/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/responsive.css">
         {{--LOGO ON THE WEBSITE URL  --}}
-        <link rel="apple-touch-icon" sizes="180x180" href="ssets_dashboard/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets_dashboard/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets_dashboard/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets_dashboard/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets_dashboard/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets_dashboard/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
 
     {{-- SMART CHART SCRIPT CODE --}}
@@ -208,7 +208,7 @@
                                         <li>
                                             <div class="media">
                                                 <div class="notification-img bg-light-primary"><img
-                                                        src="../assets_dashboard/images/avtar/man.png" alt="">
+                                                        src="/assets_dashboard/images/avtar/man.png" alt="">
                                                 </div>
                                                 <div class="media-body">
                                                     <h5> <a class="f-14 m-0" href="">Morhaulage Investment</a>
@@ -343,24 +343,24 @@
             <div class="sidebar-wrapper">
                 <div>
                     <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light"
-                                src="../assets_dashboard/images/logo/small-logo.png" alt=""><img
-                                class="img-fluid for-dark" src="../assets_dashboard/images/logo/small-white-logo.png"
+                                src="/assets_dashboard/images/logo/small-logo.png" alt=""><img
+                                class="img-fluid for-dark" src="/assets_dashboard/images/logo/small-white-logo.png"
                                 alt=""></a>
                         <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                     </div>
                     <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid"
-                                src="../assets_dashboard/images/logo-icon.png" alt=""></a></div>
+                                src="/assets_dashboard/images/logo-icon.png" alt=""></a></div>
                     <nav class="sidebar-main">
                         <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
                         <div id="sidebar-menu">
                             <ul class="sidebar-links" id="simple-bar">
                                 <li class="back-btn"><a href="index.html"><img class="img-fluid"
-                                            src="../assets_dashboard/images/new_Logo.png" alt=""></a>
+                                            src="/assets_dashboard/images/new_Logo.png" alt=""></a>
                                     <div class="mobile-back text-end"><span>Back</span><i
                                             class="fa fa-angle-right ps-2" aria-hidden="true"> </i></div>
                                 </li>
                                 <li class="sidebar-list">
-                                    <label class="badge badge-light-primary">2</label><a
+                                    <a
                                         class="sidebar-link sidebar-title" href="{{ route('user.dashboard') }}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -501,14 +501,14 @@
 
                             <div class="sidebar-img-section">
                                 <div class="sidebar-img-content"><img class="img-fluid"
-                                        src="../assets_dashboard/images/side-bar.png" alt="">
+                                        src="/assets_dashboard/images/side-bar.png" alt="">
                                     <h4>Need Help ?</h4>
                                     <a class="txt"
                                         href="https://pixelstrap.freshdesk.com/support/home">
                                         Chart with us here
                                     </a>
                                     <a class="btn btn-secondary"
-                                        href="https://wa.me/+2348081411922">
+                                        href="https://t.me/mhaulageMH">
                                         <i data-feather="send" style="color:green;"></i>Chart Us
                                     </a>
                                 </div>
@@ -533,42 +533,42 @@
         </div>
     </div>
     <!-- latest jquery-->
-    <script src="../assets_dashboard/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets_dashboard/js/jquery-3.5.1.min.js"></script>
     <!-- Bootstrap js-->
-    <script src="../assets_dashboard/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/assets_dashboard/js/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- feather icon js-->
-    <script src="../assets_dashboard/js/icons/feather-icon/feather.min.js"></script>
-    <script src="../assets_dashboard/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="/assets_dashboard/js/icons/feather-icon/feather.min.js"></script>
+    <script src="/assets_dashboard/js/icons/feather-icon/feather-icon.js"></script>
     <!-- scrollbar js-->
-    <script src="../assets_dashboard/js/scrollbar/simplebar.js"></script>
-    <script src="../assets_dashboard/js/scrollbar/custom.js"></script>
+    <script src="/assets_dashboard/js/scrollbar/simplebar.js"></script>
+    <script src="/assets_dashboard/js/scrollbar/custom.js"></script>
     <!-- Sidebar jquery-->
-    <script src="../assets_dashboard/js/config.js"></script>
+    <script src="/assets_dashboard/js/config.js"></script>
     <!-- Plugins JS start-->
-    <script src="../assets_dashboard/js/sidebar-menu.js"></script>
-    <script src="../assets_dashboard/js/chart/knob/knob.min.js"></script>
-    <script src="../assets_dashboard/js/chart/knob/knob-chart.js"></script>
-    <script src="../assets_dashboard/js/chart/apex-chart/apex-chart.js"></script>
-    <script src="../assets_dashboard/js/chart/apex-chart/stock-prices.js"></script>
-    <script src="../assets_dashboard/js/notify/bootstrap-notify.min.js"></script>
-    <script src="../assets_dashboard/js/dashboard/default.js"></script>
-    <script src="../assets_dashboard/js/notify/index.js"></script>
-    <script src="../assets_dashboard/js/datepicker/date-picker/datepicker.js"></script>
-    <script src="../assets_dashboard/js/datepicker/date-picker/datepicker.en.js"></script>
-    <script src="../assets_dashboard/js/datepicker/date-picker/datepicker.custom.js"></script>
-    <script src="../assets_dashboard/js/photoswipe/photoswipe.min.js"></script>
-    <script src="../assets_dashboard/js/photoswipe/photoswipe-ui-default.min.js"></script>
-    <script src="../assets_dashboard/js/photoswipe/photoswipe.js"></script>
-    <script src="../assets_dashboard/js/typeahead/handlebars.js"></script>
-    <script src="../assets_dashboard/js/typeahead/typeahead.bundle.js"></script>
-    <script src="../assets_dashboard/js/typeahead/typeahead.custom.js"></script>
-    <script src="../assets_dashboard/js/typeahead-search/handlebars.js"></script>
-    <script src="../assets_dashboard/js/typeahead-search/typeahead-custom.js"></script>
-    <script src="../assets_dashboard/js/height-equal.js"></script>
+    <script src="/assets_dashboard/js/sidebar-menu.js"></script>
+    <script src="/assets_dashboard/js/chart/knob/knob.min.js"></script>
+    <script src="/assets_dashboard/js/chart/knob/knob-chart.js"></script>
+    <script src="/assets_dashboard/js/chart/apex-chart/apex-chart.js"></script>
+    <script src="/assets_dashboard/js/chart/apex-chart/stock-prices.js"></script>
+    <script src="/assets_dashboard/js/notify/bootstrap-notify.min.js"></script>
+    <script src="/assets_dashboard/js/dashboard/default.js"></script>
+    <script src="/assets_dashboard/js/notify/index.js"></script>
+    <script src="/assets_dashboard/js/datepicker/date-picker/datepicker.js"></script>
+    <script src="/assets_dashboard/js/datepicker/date-picker/datepicker.en.js"></script>
+    <script src="/assets_dashboard/js/datepicker/date-picker/datepicker.custom.js"></script>
+    <script src="/assets_dashboard/js/photoswipe/photoswipe.min.js"></script>
+    <script src="/assets_dashboard/js/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script src="/assets_dashboard/js/photoswipe/photoswipe.js"></script>
+    <script src="/assets_dashboard/js/typeahead/handlebars.js"></script>
+    <script src="/assets_dashboard/js/typeahead/typeahead.bundle.js"></script>
+    <script src="/assets_dashboard/js/typeahead/typeahead.custom.js"></script>
+    <script src="/assets_dashboard/js/typeahead-search/handlebars.js"></script>
+    <script src="/assets_dashboard/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="/assets_dashboard/js/height-equal.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
-    <script src="../assets_dashboard/js/script.js"></script>
-    <script src="../assets_dashboard/js/theme-customizer/customizer.js"></script>
+    <script src="/assets_dashboard/js/script.js"></script>
+    <script src="/assets_dashboard/js/theme-customizer/customizer.js"></script>
     <!-- login js-->
     <!-- Plugin used-->
 

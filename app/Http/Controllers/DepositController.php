@@ -13,6 +13,7 @@ class DepositController extends Controller
     {
         return view('user.deposit');
     }
+    
     // DEPOSIT BTC PUBLIC FUNCTION
     public function depositDetails()
     {

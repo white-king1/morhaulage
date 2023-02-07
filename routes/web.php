@@ -19,34 +19,46 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+// pleases add 'verify' => true
+Auth::routes([]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'MainController@index')->name('welcome');
 
-// FOR THE ADMIN DASHBOARD
+// ADMIN MIDDLEWARE AUTHENTIFICATION ACCESS ROUTE
+Route::middleware(['auth'])->prefix('admin')->group(function (){
+
+    // FOR THE ADMIN DASHBOARD
 Route::get('/dashboard', 'HomeController@redirect')->name('redirect');
 Route::get('/admin-dashboard', 'AdminDashboardController@admin')->name('admin');
 
 // ADMIN->USERS NAV-BAR
-Route::get('/all_users','AllusersController@allUsers')->name('all.users');
-Route::get('/all_deposits','AlldepositsController@allDeposits')->name('all.deposits');
-Route::get('/all_withdrawals','AllwithdrawalsController@allWithdrawals')->name('all.withdrawals');
+Route::get('/all_users', 'AllusersController@allUsers')->name('all.users');
+// TO DELETE A USER FROM THE USER TABLE
+Route::get('/delete_users/{id}', 'AllusersController@deleteUsers')->name('delete.users');
+
+Route::get('/all_deposits', 'AlldepositsController@allDeposits')->name('all.deposits');
+// TO CHANGE THE STATUS TO PAID ON THE TRANSACTION TABLE
+Route::get('/paid_deposits/{id}', 'AlldepositsController@paidDeposits')->name('paid.deposits');
+
+Route::get('/all_withdrawals', 'AllwithdrawalsController@allWithdrawals')->name('all.withdrawals');
+// TO CHANGE THE STATUS TO PAID ON THE WITHDRAW TABLE
+Route::get('/paid_withdrawals/{id}', 'AllwithdrawalsController@paidWithdrawals')->name('paid.withdrawals');
+
 
 // ADMIN TRANSFERS OF FUNDS
-Route::get('/transfer','TransferController@newTransafer')->name('new.transfer');
-Route::post('/transfer_details','TransferController@transferDetails')->name('transfer.details');
-Route::get('/transfer_successful','TransferController@transferSuccessful')->name('transfer.successful');
+Route::get('/transfer', 'TransferController@newTransafer')->name('new.transfer');
+Route::post('/transfer_details', 'TransferController@transferDetails')->name('transfer.details');
+Route::get('/transfer_successful', 'TransferController@transferSuccessful')->name('transfer.successful');
 // THE ADMIN DASHBOARD ENDS HERE
-
-// USERS DASHBOARD ROUTE BEGIN
-Route::middleware(['auth'])->prefix('user')->group(function () {
-Route::get('/', 'DashboardController@index')->name('user.dashboard');
 });
 
-// Route::post('/user', 'DashboardController@regRef')->name('reg.ref');
-// Route::get('/user_/{place}', 'DashboardController@userView')->name('user.view');
+
+// USERS MIDDLEWARE AUTHENTICATION ACCESS ROUTE note:please add ,'verified'
+Route::middleware(['auth'])->prefix('user')->group(function () {
+
+    Route::get('/', 'DashboardController@index')->name('user.dashboard');
 
 // REPORT VIEW ROUTE
 Route::post('/depv_form', 'DepvreportController@depvForm')->name('depv.form');
@@ -66,7 +78,7 @@ Route::get('/businessplan_investment', 'InvestmentController@businessPlan')->nam
 Route::get('/carhouseplan_investment', 'InvestmentController@carHouse')->name('carhouse.plan');
 
 // DEPOSIT ROUTE
-Route::get('/deposit','DepositController@deposit')->name('deposit.now');
+Route::get('/deposit', 'DepositController@deposit')->name('deposit.now');
 // BTC DEPOSIT ROUTE
 Route::get('/depositbtc_details', 'DepositController@depositDetails')->name('depositbtc.details');
 Route::post('/postbtc_payment', 'DepositController@postbtcPay')->name('postbtc.payment');
@@ -86,11 +98,11 @@ Route::get('/makeusdt_payment/{trans}', 'DepositController@makeusdtPay')->name('
 
 
 // SUCCESSFUL PAYMENT ROUTE
-Route::post('/congrats_payment/{trans}','DepositController@congratsPay')->name('congrats.pay');
+Route::post('/congrats_payment/{trans}', 'DepositController@congratsPay')->name('congrats.pay');
 Route::get('chart_us', 'DepositController@chartUs')->name('chart.us');
 
 // WITHDRAWAL ROUTE
-Route::get('/withdraw','WithdrawController@withdraw')->name('withdraw.now');
+Route::get('/withdraw', 'WithdrawController@withdraw')->name('withdraw.now');
 // BTC WITHDRAWAL ROUTE
 Route::get('/withdrawbtc_details', 'WithdrawController@withdrawbtcDetails')->name('withdrawbtc.details');
 Route::post('/postbtc_withdraw', 'WithdrawController@postbtcWithdraw')->name('postbtc.withdraw');
@@ -110,8 +122,12 @@ Route::get('/makeusdt_withdraw/{withdraw}', 'WithdrawController@makeusdtWithdraw
 
 
 // SUCCESSFUL WITHDRAWAL ROUTE
-Route::post('/congrats_withdraw/{withdraw}','WithdrawController@congratsWithdraw')->name('congrats.withdraw');
+Route::post('/congrats_withdraw/{withdraw}', 'WithdrawController@congratsWithdraw')->name('congrats.withdraw');
 Route::get('insufficient_funds', 'WithdrawController@insufficientFunds')->name('insufficient.funds');
 
 // CHANGE PASSWORD ROUTE
-Route::get('/change_password','ChangepController@changePassword')->name('change.password');
+Route::get('/change_password', 'ChangepController@changePassword')->name('change.password');
+
+
+});
+

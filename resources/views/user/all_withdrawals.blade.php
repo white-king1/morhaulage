@@ -45,19 +45,23 @@
                     <table class="table table-bordernone">
                         <thead>
                             <tr>
-                                <th> <span>User Id</span></th>
+                                <th> <span>Name</span></th>
                                 <th> <span>Referral Link </span></th>
                                 <th> <span>Withdraw Amount</span></th>
                                 <th> <span>Crypto Currency</span></th>
                                 <th> <span>Wallet Address </span></th>
                             </tr>
                         </thead>
+
                         <tbody>
                             @foreach ($all_withdrawals as $withdraw)
                                 <tr>
                                     <td>
-                                        <h6>{{$withdraw->user_id}}</h6>
+                                        <h6>{{$withdraw->user->name}}</h6>
                                     </td>
+                                    {{-- <td>
+                                        <h6>{{$withdraw->user_id}}</h6>
+                                    </td> --}}
                                     <td class="img-content-box">
                                         <h6>{{$withdraw->referral_link}}</h6>
                                     </td>
@@ -74,9 +78,9 @@
                                         <div class="badge badge-light-primary"></div>
                                     </td>
                                     <td>
-                                        <form action="" method="POST">@csrf
-                                                <button class="btn btn-success" type="submit">Paid</button>
-                                        </form>
+                                        @if ($withdraw->status != 'paid')
+                                        <a href="{{route('paid.withdrawals',$withdraw->id)}}" class="btn btn-success" type="submit">Paid</a>
+                                        @endif
                                     </td>
                                 @endforeach
                         </tbody>

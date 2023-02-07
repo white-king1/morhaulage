@@ -53,13 +53,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ( $all_deposits as $transaction )
+                            @foreach ( $all_deposits as $trans )
                                 <tr>
                                     <td>
-                                        <h6>{{ Auth::user()->name }}</h6>
+                                        <h6>{{ $trans->user->name }}</h6>
                                     </td>
                                     <td class="img-content-box">
-                                        <h6>$trans->transaction_id</h6>
+                                        <h6>{{$trans->transaction_id}}</h6>
                                     </td>
                                     <td class="img-content-box">
                                         <h6>{{($trans->plan)}}</h6>
@@ -68,15 +68,17 @@
                                         <h6>${{number_format($trans->amount)}}</h6>
                                     </td>
                                     <td class="img-content-box">
-                                        <h6>{{ Auth::user()->referral_link }}</h6>
+                                        <h6>{{ $trans->user->referral_link }}</h6>
                                     </td>
                                     <td>
                                         <div class="badge badge-light-primary"></div>
                                     </td>
                                     <td>
-                                        <form action="" method="POST">@csrf
-                                                <button class="btn btn-success" type="submit">Paid</button>
-                                        </form>
+                                         @if ($trans->status != 'paid')
+                                         <a href="{{route('paid.deposits',$trans->id)}}" class="btn btn-success" type="submit">Paid</a>
+
+                                         @endif
+
                                     </td>
                                     @endforeach
                         </tbody>

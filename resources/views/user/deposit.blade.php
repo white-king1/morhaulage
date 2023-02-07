@@ -29,7 +29,7 @@
                             <div class="media">
                                 <div class="media-body">
                                     <div class="col-md-6">
-                                        <img src="assets_dashboard/images/bitcoinnew.jpg"alt="btc">
+                                        <img src="/assets_dashboard/images/bitcoinnew.jpg"alt="btc">
                                     </div>
                                 </div>
                                 <div class="media-end">
@@ -58,7 +58,7 @@
                             <div class="media">
                                 <div class="media-body">
                                     <div class="col-md-6">
-                                        <img src="assets_dashboard/images/ethn.png"alt="btc">
+                                        <img src="/assets_dashboard/images/ethn.png"alt="eth">
                                     </div>
                                 </div>
                                 <div class="media-end">
@@ -87,7 +87,7 @@
                             <div class="media">
                                 <div class="media-body">
                                     <div class="col-md-6">
-                                        <img src="assets_dashboard/images/usdtnnew.png"alt="btc">
+                                        <img src="/assets_dashboard/images/usdtnnew.png"alt="usdt">
                                     </div>
                                     {{-- <h5 class="font-primary" style="margin-top:10px;">Bitcoin(BTC)</h5> --}}
                                 </div>
@@ -116,7 +116,7 @@
                             <div class="media">
                                 <div class="media-body">
                                     <div class="col-md-6">
-                                        <img src="assets_dashboard/images/pm1new.png"alt="btc">
+                                        <img src="/assets_dashboard/images/pm1new.png"alt="Pm">
                                     </div>
                                 </div>
                                 <div class="media-end">

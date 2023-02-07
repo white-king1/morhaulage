@@ -26,10 +26,12 @@
                         <div class="card-header card-no-border">
                             <div class="media media-dashboard">
                                 <div class="media-body">
-                                    <center>
-                                        <h4>You requested to make a deposit of USD{{ number_format($trans->amount) }}
-                                            kindly,</h4>
-                                    </center>
+                                    <div class="mb-3">
+                                        <h2>You requested to make a deposit of::</h2>
+                                        <div class="container card card-body">
+                                            <h2>USD{{ number_format($trans->amount) }}</h2>
+                                        </div>
+                                    </div>
                                     <br>
                                     <center>
                                         <h5 class="mb-0">Follow the instructions;</h5>
@@ -45,7 +47,12 @@
                                         3. Chart with us on the Chart Us Button to complete your transaction.
                                     </h4>
                                     <br>
-                                    <h4>Transaction Id:: {{ $trans->transaction_id }}</h4>
+                                    <div class="mb-3">
+                                        <h2>Transaction ID::</h2>
+                                        <div class="container card card-body">
+                                            <h2>{{ $trans->transaction_id }}</h2>
+                                        </div>
+                                    </div>
                                     <br>
                                     <h6>NOTE:
                                         FOR IMMEDIATE ACTIVATION OF PLAN AND CREDITING OF WALLET,KINDLY CLICK ON CHART US BUTTON.

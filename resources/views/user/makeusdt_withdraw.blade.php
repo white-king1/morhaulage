@@ -27,11 +27,19 @@
                             <div class="media media-dashboard">
                                 <div class="media-body">
 
-                                    <h4>
-                                        You requested to make a withdrawal
-                                        of::USD{{ number_format($withdraw->withdraw_amount) }},<br>
-                                        To your USDT wallet address:: {{ $withdraw->wallet_address }}.
-                                    </h4>
+                                    <div class="mb-3">
+                                        <h2>You requested to make a withdrawal of::</h2>
+                                        <div class="container card card-body">
+                                            <h2>USD{{ number_format($withdraw->withdraw_amount) }}</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <h2>To your USDT wallet address::</h2>
+                                        <div class="container card card-body">
+                                            <h2>{{($withdraw->wallet_address)}}</h2>
+                                        </div>
+                                    </div>
 
                                     <br>
                                     <center>

@@ -26,13 +26,19 @@
                         <div class="card-header card-no-border">
                             <div class="media media-dashboard">
                                 <div class="media-body">
+                                    <div class="mb-3">
+                                        <h2>You requested to make a withdrawal of::</h2>
+                                        <div class="container card card-body">
+                                            <h2>USD{{ number_format($withdraw->withdraw_amount) }}</h2>
+                                        </div>
+                                    </div>
 
-                                    <h4>
-                                        You requested to make a withdrawal
-                                        of::USD{{ number_format($withdraw->withdraw_amount) }},<br>
-                                        To your ETHEREUM(ERC20) wallet address:: {{ $withdraw->wallet_address }}.
-                                    </h4>
-
+                                    <div class="mb-3">
+                                        <h2>To your ETHEREUM(ERC20) wallet address::</h2>
+                                        <div class="container card card-body">
+                                            <h2>{{($withdraw->wallet_address)}}</h2>
+                                        </div>
+                                    </div>
                                     <br>
                                     <center>
                                         <h5 class="mb-0">Follow the instructions;</h5>
