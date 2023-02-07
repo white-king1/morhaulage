@@ -53,7 +53,7 @@
         <link rel="manifest" href="/site.webmanifest">
 
     {{-- SMART CHART SCRIPT CODE --}}
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         var _smartsupp = _smartsupp || {};
         _smartsupp.key = '383cb9122ee084918d26efe793d807f41a5472af';
         window.smartsupp || (function(d) {
@@ -69,7 +69,10 @@
             c.src = 'https://www.smartsuppchat.com/loader.js?';
             s.parentNode.insertBefore(c, s);
         })(document);
-    </script>
+    </script> --}}
+    {{-- JIVO SMART CHART BUTTON STARTS HERE--}}
+    <script src="//code.jivosite.com/widget/yXsig7KbpE" async></script>
+    {{-- JIVO SMART CHART BUTTON ENDS HERE --}}
 </head>
 
 <body>
@@ -95,7 +98,7 @@
             <div class="page-header">
                 <div class="header-wrapper row m-0">
                     <div class="header-logo-wrapper col-auto p-0">
-                        <div class="logo-wrapper"><a href="index.html"><img class="img-fluid"
+                        <div class="logo-wrapper"><a href=""><img class="img-fluid"
                                     src="/assets_dashboard/images/new_Logo.png" alt=""></a></div>
                         <div class="toggle-sidebar">
                             <div class="status_toggle sidebar-toggle d-flex">
@@ -213,7 +216,7 @@
                                                 <div class="media-body">
                                                     <h5> <a class="f-14 m-0" href="">Morhaulage Investment</a>
                                                     </h5>
-                                                    <p>Welcome back to your dashboard is ready...</p><span>10:20</span>
+                                                    <p>Welcome back, to your dashboard is ready...</p><span>10:20</span>
                                                 </div>
 
                                             </div>
@@ -251,10 +254,10 @@
                                     </svg>
                                 </div>
                                 <ul class="profile-dropdown onhover-show-div">
-                                    <li><a href="user-profile.html"><i data-feather="user"></i><span>Account
+                                    <li><a href=""><i data-feather="user"></i><span>Account
                                             </span></a>
                                     </li>
-                                    <li><a href="edit-profile.html">
+                                    <li><a href="{{route('profile.settings')}}">
                                             <i data-feather="settings"></i><span>Profile Settings</span></a></li>
                                     <li>
                                         <form action="{{ route('logout') }} " method="post">@csrf
@@ -343,13 +346,13 @@
             <div class="sidebar-wrapper">
                 <div>
                     <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light"
-                                src="/assets_dashboard/images/logo/small-logo.png" alt=""><img
-                                class="img-fluid for-dark" src="/assets_dashboard/images/logo/small-white-logo.png"
+                                src="/assets_dashboard/images/new_Logo.png" alt=""><img
+                                class="img-fluid for-dark" src="/assets_dashboard/images/new_Logo.png"
                                 alt=""></a>
                         <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                     </div>
-                    <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid"
-                                src="/assets_dashboard/images/logo-icon.png" alt=""></a></div>
+                    <div class="logo-icon-wrapper"><a href=""><img class="img-fluid"
+                                src="/assets_dashboard/images/new_Logo.png" alt=""></a></div>
                     <nav class="sidebar-main">
                         <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
                         <div id="sidebar-menu">
@@ -455,7 +458,7 @@
                                                 </g>
                                             </g>
                                         </svg><span>Change Password</span></a>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g>
@@ -478,7 +481,7 @@
                                         </svg><span>Support Ticket</span>
                                     </a>
                                 <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
-                                        href="support-ticket.html">
+                                        href="">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g>

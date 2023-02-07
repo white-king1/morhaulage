@@ -25,8 +25,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation.19.2/dist/jquery.validate.min.js"></script>
     <!-- Smartsupp Live Chat script -->
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         var _smartsupp = _smartsupp || {};
         _smartsupp.key = '383cb9122ee084918d26efe793d807f41a5472af';
         window.smartsupp || (function(d) {
@@ -42,7 +43,11 @@
             c.src = 'https://www.smartsuppchat.com/loader.js?';
             s.parentNode.insertBefore(c, s);
         })(document);
-    </script>
+    </script> --}}
+    {{-- JIVO SMART CHART BUTTON STARTS HERE--}}
+    <script src="//code.jivosite.com/widget/yXsig7KbpE" async></script>
+    {{-- JIVO SMART CHART BUTTON ENDS HERE --}}
+
 </head>
 
 <body class="apbc-body" data-spy="scroll" data-target=".apbc-nav-menu" data-offset="80">
@@ -310,7 +315,7 @@
     <script src="assets/js/rs6.min.js"></script>
     <script src="assets/js/side-demo.js"></script>
     <script src="assets/js/business-4.js"></script>
-
+    <script src="assets/js/change_password.js"></script>
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({

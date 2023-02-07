@@ -60,6 +60,9 @@ Route::middleware(['auth'])->prefix('user')->group(function () {
 
     Route::get('/', 'DashboardController@index')->name('user.dashboard');
 
+    // PROFILE SETTINGS ROUTE
+    Route::get('/profile_settings', 'ProfileController@profileSettings')->name('profile.settings');
+
 // REPORT VIEW ROUTE
 Route::post('/depv_form', 'DepvreportController@depvForm')->name('depv.form');
 Route::get('/depv_report', 'DepvreportController@depvReport')->name('depv.report');
@@ -127,6 +130,7 @@ Route::get('insufficient_funds', 'WithdrawController@insufficientFunds')->name('
 
 // CHANGE PASSWORD ROUTE
 Route::get('/change_password', 'ChangepController@changePassword')->name('change.password');
+Route::post('/update_password', 'ChangepController@updatePassword')->name('update.password');
 
 
 });
