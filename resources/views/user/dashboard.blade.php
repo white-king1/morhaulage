@@ -21,11 +21,18 @@
         </div>
         <div class="card alert alert-primary " role="alert">
             <div class="row">
-                <div class="col-md-2" style="margin-left:-10px;"><img src="assets_dashboard/images/gal7.jpg" alt="image">
+                @if (Auth::user()->image == null)
+                 <div class="col-md-2">
+                 <img  class="rounded-circle img-fluid" src="/assets_dashboard/images/avtar/avatarimagez.png" alt="uploadimage">
+                 </div>
+                @else
+                <div class="col-md-2 ">
+                    <img  class="rounded-circle img-fluid" src="/upload_images/{{Auth::user()->image}}" alt="user_image">
                 </div>
+                @endif
                 <div class="col-md-3" style="margin-top: 30px;">
                     <h3 class="caption">{{ Auth::user()->name }}</h3>
-                    <p>{{ Auth::user()->email }}</p>
+                    <h5>{{ Auth::user()->email }}</h5>
                 </div><!-- single end -->
                 <div class="col-md-2" style="margin-top: 30px;">
                     <h3 class="caption">Register Date</h3>

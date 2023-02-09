@@ -21,5 +21,13 @@ class AllusersController extends Controller
           $user->delete();
           return redirect()->route('all.users');
     }
+
+    public function restrictUsers($id)
+    {
+          $user = User::find($id);
+          $user->status ='restricted';
+          $user->save();
+          return redirect()->route('all.users');
+    }
 }
 

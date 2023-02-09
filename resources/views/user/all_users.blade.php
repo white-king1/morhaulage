@@ -50,6 +50,12 @@
                                     <th> <span>Phone </span></th>
                                     <th> <span>referral_link </span></th>
                                     <th> <span>Balance </span></th>
+                                    <th> <span>Country </span></th>
+                                    <th> <span>Address</span></th>
+                                    <th> <span>State </span></th>
+                                    <th> <span>City </span></th>
+                                    <th> <span>Zipcode </span></th>
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -72,11 +78,25 @@
                                                 ${{ number_format(floatval($user->wallet->balance ?? 'unknown')) }}
                                             </h6>
                                         </td>
+                                        <td class="img-content-box">
+                                            <h6>{{ $user->country }}</h6>
+                                        </td>
+                                        <td class="img-content-box">
+                                            <h6>{{ $user->address }}</h6>
+                                        </td>
+                                        <td class="img-content-box">
+                                            <h6>{{ $user->state }}</h6>
+                                        </td>
+                                        <td class="img-content-box">
+                                            <h6>{{ $user->city}}</h6>
+                                        </td>
+                                        <td class="img-content-box">
+                                            <h6>{{ $user->zipcode }}</h6>
+                                        </td>
                                         <td>
                                             <div class="badge badge-light-primary"></div>
                                         </td>
                                         <td>
-
                                             <form action="" method="POST">@csrf
                                                 @if ($user->status != 'restricted')
                                                 <button class="btn btn-success" type="submit">Restrict</button>

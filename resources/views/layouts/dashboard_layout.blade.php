@@ -46,31 +46,13 @@
     <link id="color" rel="stylesheet" href="/assets_dashboard/css/color-1.css" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/responsive.css">
-        {{--LOGO ON THE WEBSITE URL  --}}
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets_dashboard/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets_dashboard/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets_dashboard/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+    {{-- LOGO ON THE WEBSITE URL  --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets_dashboard/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets_dashboard/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets_dashboard/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-    {{-- SMART CHART SCRIPT CODE --}}
-    {{-- <script type="text/javascript">
-        var _smartsupp = _smartsupp || {};
-        _smartsupp.key = '383cb9122ee084918d26efe793d807f41a5472af';
-        window.smartsupp || (function(d) {
-            var s, c, o = smartsupp = function() {
-                o._.push(arguments)
-            };
-            o._ = [];
-            s = d.getElementsByTagName('script')[0];
-            c = d.createElement('script');
-            c.type = 'text/javascript';
-            c.charset = 'utf-8';
-            c.async = true;
-            c.src = 'https://www.smartsuppchat.com/loader.js?';
-            s.parentNode.insertBefore(c, s);
-        })(document);
-    </script> --}}
-    {{-- JIVO SMART CHART BUTTON STARTS HERE--}}
+    {{-- JIVO SMART CHART BUTTON STARTS HERE --}}
     <script src="//code.jivosite.com/widget/yXsig7KbpE" async></script>
     {{-- JIVO SMART CHART BUTTON ENDS HERE --}}
 </head>
@@ -254,10 +236,10 @@
                                     </svg>
                                 </div>
                                 <ul class="profile-dropdown onhover-show-div">
-                                    <li><a href=""><i data-feather="user"></i><span>Account
+                                    <li><a href="{{ route('image.upload') }}"><i data-feather="user"></i><span>Account
                                             </span></a>
                                     </li>
-                                    <li><a href="{{route('profile.settings')}}">
+                                    <li><a href="{{ route('profile.settings') }}">
                                             <i data-feather="settings"></i><span>Profile Settings</span></a></li>
                                     <li>
                                         <form action="{{ route('logout') }} " method="post">@csrf
@@ -284,60 +266,102 @@
                 </div>
             </div>
             {{-- ADDING GOOGLE TRANSALTE TO A WEB PAGE USING HTML,CSS AND JAVASCRIPT BEGINS --}}
-            <style type='text/css'>
-                iframe.goog-te-banner-frame {
+
+            {{-- <style>
+                .goog-te-banner-frame.skiptranslate, .goog-te-gadget-simple img{
                     display: none !important;
                 }
-            </style>
-
-            <style type='text/css'>
-                body {
-                    position: static !important;
-                    top: 10px !important;
-
-                }
-            </style>
-
-            <style type='text/css'>
-                .goog-logo-link {
+                .goog-tooltip{
                     display: none !important;
-
                 }
-
-                .goog-te-gadget {
-                    color: transparent !important;
-                    padding-left: 10px;
-
+                .goog-tooltip:hover{
+                    display: none !important;
                 }
-
-                .goog-te-gadget .goog-te-combo {
-                    color: blue !important;
-
+                .goo-text-highlight{
+                    background-color: black !important;
+                    border: none !important;
+                    box-shadow: none !important;
                 }
-            </style>
-            <style type="text/css">
-                .goog-te-combo {
-                    max-width: 500% !important;
-                    overflow: scroll !important;
-                    box-sizing: border-box !important; //fixes a padding issue
-                    height: auto !important; //gets rid of vertical
+                body{
+                    top: 0px !important;
                 }
-            </style>
-            <div class="nav-right">
-                <div id="google_translate_element"></div>
+            </style> --}}
+            {{-- <style type='text/css'>
+            .goog-logo-link {
+                display: none !important;
 
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({
-                            pageLanguage: 'en'
-                        }, 'google_translate_element');
-                    }
-                </script>
+            }
 
-                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-                </script>
-            </div>
+            .goog-te-gadget {
+                color: transparent !important;
+                padding-left: 10px;
+
+            }
+
+            .goog-te-gadget .goog-te-combo {
+                color: blue !important;
+
+            }
+        </style> --}}
+            <div id="google_translate_element"></div>
+
+
+            {{-- <style type='text/css'>
+            iframe.goog-te-banner-frame {
+                display: none !important;
+            }
+        </style>
+
+        <style type='text/css'>
+            body {
+                position: static !important;
+                top: 10px !important;
+
+            }
+        </style>
+
+        <style type='text/css'>
+            .goog-logo-link {
+                display: none !important;
+
+            }
+
+            .goog-te-gadget {
+                color: transparent !important;
+                padding-left: 10px;
+
+            }
+
+            .goog-te-gadget .goog-te-combo {
+                color: blue !important;
+
+            }
+        </style>
+        <style type="text/css">
+            .goog-te-combo {
+                max-width: 100% !important;
+                overflow: scroll !important;
+                box-sizing: border-box !important; //fixes a padding issue
+                height: 20% !important; //gets rid of vertical
+            }
+        </style>
+        <div class="nav-right">
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'en'
+                    }, 'google_translate_element');
+                }
+            </script>
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+            </script>
+        </div> --}}
             {{-- ADDING GOOGLE TRANSALTE TO A WEB PAGE USING HTML,CSS AND JAVASCRIPT ENDS HERE --}}
+
+
         </header>
         <!-- Page Header Ends                              -->
         <!-- Page Body Start-->
@@ -363,8 +387,7 @@
                                             class="fa fa-angle-right ps-2" aria-hidden="true"> </i></div>
                                 </li>
                                 <li class="sidebar-list">
-                                    <a
-                                        class="sidebar-link sidebar-title" href="{{ route('user.dashboard') }}">
+                                    <a class="sidebar-link sidebar-title" href="{{ route('user.dashboard') }}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g>
@@ -382,6 +405,7 @@
                                 </li>
 
                                 {{-- START HERE  --}}
+
                                 <li class="sidebar-list"><a class="sidebar-link sidebar-title"
                                         href="{{ route('investments') }}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -423,7 +447,8 @@
                                             </g>
                                         </svg><span>Deposit</span></a>
                                 </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="{{ route('withdraw.now') }}">
+                                <li class="sidebar-list"><a class="sidebar-link sidebar-title"
+                                        href="{{ route('withdraw.now') }}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g>
@@ -440,9 +465,32 @@
                                                         stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </g>
                                             </g>
-                                        </svg><span>Withdraw</span></a>
-
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="{{route('change.password')}}">
+                                        </svg><span>Withdraw</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-list"><a class="sidebar-link sidebar-title"
+                                    href="{{ route('profile.settings') }}">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <g>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M2.75 12C2.75 5.063 5.063 2.75 12 2.75C18.937 2.75 21.25 5.063 21.25 12C21.25 18.937 18.937 21.25 12 21.25C5.063 21.25 2.75 18.937 2.75 12Z"
+                                                    stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M15.9935 12H16.0025" stroke="#130F26" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M11.9945 12H12.0035" stroke="#130F26" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M7.9955 12H8.0045" stroke="#130F26" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </g>
+                                        </g>
+                                    </svg><span>Profile Settings</span>
+                                </a>
+                            </li>
+                                <li class="sidebar-list"><a class="sidebar-link sidebar-title"
+                                        href="{{ route('change.password') }}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g>
@@ -506,12 +554,10 @@
                                 <div class="sidebar-img-content"><img class="img-fluid"
                                         src="/assets_dashboard/images/side-bar.png" alt="">
                                     <h4>Need Help ?</h4>
-                                    <a class="txt"
-                                        href="https://pixelstrap.freshdesk.com/support/home">
+                                    <a class="txt" href="https://pixelstrap.freshdesk.com/support/home">
                                         Chart with us here
                                     </a>
-                                    <a class="btn btn-secondary"
-                                        href="https://t.me/mhaulageMH">
+                                    <a class="btn btn-secondary" href="https://t.me/mhaulageMH">
                                         <i data-feather="send" style="color:green;"></i>Chart Us
                                     </a>
                                 </div>
@@ -600,6 +646,22 @@
             });
         })();
     </script>
+
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                    pageLanguage: 'en'
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+        cb=googleTranslateElementInit"></script>
+
 </body>
 
 <!-- Mirrored from admin.pixelstrap.com/zeta/theme/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Mar 2022 19:36:04 GMT -->

@@ -6,15 +6,14 @@ use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class ProfileController extends Controller
+class ImageUploadController extends Controller
 {
-    public function profileSettings()
+    public function imageUpload()
     {
-        return view ('user.profile_settings');
+        return view('user.image_upload');
     }
 
-
-    public function postProfile(Request $request)
+    public function imageUploadPost(Request $request)
     {
         $request->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -26,13 +25,6 @@ class ProfileController extends Controller
 
 
 
-        Auth::user()->country = $request->country;
-        Auth::user()->Address = $request->address;
-        Auth::user()->state = $request->state;
-        Auth::user()->city = $request->city;
-        Auth::user()->zipcode = $request->zipcode;
-
-
 
         Auth::user()->image=$imageName;
 
@@ -40,5 +32,6 @@ class ProfileController extends Controller
         return back()
             ->with('success','You have successfully upload image.')
             ->with('image',$imageName);
+
     }
 }

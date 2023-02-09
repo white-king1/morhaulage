@@ -26,24 +26,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation.19.2/dist/jquery.validate.min.js"></script>
-    <!-- Smartsupp Live Chat script -->
-    {{-- <script type="text/javascript">
-        var _smartsupp = _smartsupp || {};
-        _smartsupp.key = '383cb9122ee084918d26efe793d807f41a5472af';
-        window.smartsupp || (function(d) {
-            var s, c, o = smartsupp = function() {
-                o._.push(arguments)
-            };
-            o._ = [];
-            s = d.getElementsByTagName('script')[0];
-            c = d.createElement('script');
-            c.type = 'text/javascript';
-            c.charset = 'utf-8';
-            c.async = true;
-            c.src = 'https://www.smartsuppchat.com/loader.js?';
-            s.parentNode.insertBefore(c, s);
-        })(document);
-    </script> --}}
+
     {{-- JIVO SMART CHART BUTTON STARTS HERE--}}
     <script src="//code.jivosite.com/widget/yXsig7KbpE" async></script>
     {{-- JIVO SMART CHART BUTTON ENDS HERE --}}
@@ -73,6 +56,14 @@
     <!-- ScrollTop Button -->
     <a href="#" class="apbc-scroll-top"><i class="fas fa-angle-double-up"></i></a>
 
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="'http://translate.google.com/translate_a/element.js?cb=goggleTranslateElementInit"></script>
     <!-- Header Section Starts -->
     <header class="apbc-header-section" style="background-image:  url(assets/img/business-4/footer-bg.jpg)";>
         <div class="container">
