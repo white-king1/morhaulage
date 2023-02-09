@@ -1,4 +1,6 @@
 @extends('layouts.dashboard_layout')
+<br>
+<br>
 @section('content')
     <div class="page-body">
         <div class="container-fluid">
@@ -19,6 +21,13 @@
             </div>
         </div>
         <!-- Container-fluid starts-->
+        @if (Session::has('flash_message'))
+        <center>
+            <div class="alert {{ Session::get('flash_type') }} col-md-4">
+                <h6>{{ Session::get('flash_message') }}</h6>
+            </div>
+        </center>
+    @endif
         <div class="container-fluid credit-card payment-details">
 
             <div class="row">

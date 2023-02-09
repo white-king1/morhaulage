@@ -27,9 +27,11 @@ class ChangepController extends Controller
         $current_user->update([
             'password'=>bcrypt($request->new_password)
         ]);
-        return redirect()->back()->with('success','Password successfully Updated.');
+        return redirect()->back()->with('flash_message', 'You have successfully changed your password.')
+        ->with('flash_type', 'alert-success');
       }else{
-        return redirect()->back()->with('error','current password does not match.');
+        return redirect()->back()->with('flash_message', 'You have successfully changed your password.')
+        ->with('flash_type', 'alert-success');
       }
 
     }

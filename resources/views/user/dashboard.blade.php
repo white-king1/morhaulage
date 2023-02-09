@@ -1,4 +1,6 @@
 @extends('layouts.dashboard_layout')
+<br>
+<br>
 @section('content')
     <div class="page-body">
         <div class="container-fluid">
@@ -19,6 +21,13 @@
                 </div>
             </div>
         </div>
+        @if (Session::has('flash_message'))
+        <center>
+        <div class="alert {{ Session::get('flash_type') }} col-md-4">
+           <h6>{{ Session::get('flash_message') }}</h6>
+        </div>
+        </center>
+        @endif
         <div class="card alert alert-primary " role="alert">
             <div class="row">
                 @if (Auth::user()->image == null)
@@ -81,27 +90,6 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-xl-3 col-md-5 dash-xl-50">
-                    <div class="card ">
-                        <div class="card-body ">
-                            <div class="col-md-6 mb-2" style="margin-left: 20px;">
-                                <label>
-                                    <h3>Referral Code</h3>
-                                </label>
-                                <div class="input-group">
-                                    <input type="text" name="text" class="form-control" id="referralURL"
-                                        value="{{ Auth::user()->referral_link }}" readonly>
-                                    <div class="input-group-append">
-                                        <span class="input-group-text copytext copyBoard" id="copyBoard"
-                                            onclick="myFunction()"> <i data-feather="copy"
-                                                style="color:rgba(99,98,231,0.8);"></i></i> </span>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
             <div class="col-lg-12">
                 <div class="dashboard-main">
@@ -206,7 +194,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="{{ route('investp.report') }}">
+                                                                                href="">
                                                                                 View Report
                                                                             </a>
                                                                         </center>
@@ -236,7 +224,7 @@
 
 
                                                             <a class="btn btn-secondary"
-                                                                href="{{ route('investp.report') }}">
+                                                                href="">
                                                                 View Report
                                                             </a>
                                                         </center>
@@ -274,7 +262,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <a class="btn btn-secondary"
-                                                                                href="{{ route('investp.report') }}">
+                                                                                href="">
                                                                                 View Report
                                                                             </a>
                                                                         </center>
@@ -304,7 +292,7 @@
 
 
                                                             <a class="btn btn-secondary"
-                                                                href="{{ route('investp.report') }}">
+                                                                href="">
                                                                 View Report
                                                             </a>
                                                         </center>
@@ -381,7 +369,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container-fluid">
+                        {{-- <div class="container-fluid">
                             <div class="row">
                                 <div class="col-xl-12 col-md-12 box-col-9 ">
                                     <div class="file-content">
@@ -420,7 +408,8 @@
                                                         <div class="media"><i class="fa fa-folder f-36 txt-warning"></i>
                                                             <div class="media-body ms-3">
                                                                 <h4 class="mb-0">Total Withdraw</h4>
-                                                                <h1>$100
+                                                                <h1>
+                                                                    $0
                                                                 </h1>
                                                             </div>
                                                         </div>
@@ -439,7 +428,8 @@
                                                         <div class="media"><i class="fa fa-folder f-36 txt-warning"></i>
                                                             <div class="media-body ms-3">
                                                                 <h4 class="mb-0">Last Withdraw</h4>
-                                                                <h1>$110
+                                                                <h1>
+                                                                    ${{ number_format(floatval(Auth::user()->trans->amount ?? 'unknown')) }}
                                                                 </h1>
                                                             </div>
                                                         </div>
@@ -451,7 +441,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

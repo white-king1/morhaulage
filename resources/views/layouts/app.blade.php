@@ -99,8 +99,8 @@
             </div>
         </div>
         <br>
-        {{-- ADDING GOOGLE TRANSALTE TO A WEB PAGE USING HTML,CSS AND JAVASCRIPT BEGINS --}}
-        <style type='text/css'>
+         {{-- GOOGLE TRANSLATE STARTS HERE --}}
+         <style type='text/css'>
             .goog-logo-link {
                 display: none !important;
 
@@ -117,7 +117,68 @@
 
             }
         </style>
-        <div id="google_translate_element"></div>
+         <style type='text/css'>
+            iframe.goog-te-banner-frame {
+                display: none !important;
+            }
+        </style>
+
+        <style type='text/css'>
+            body {
+                position: static !important;
+                top: 0px !important;
+            }
+        </style>
+
+        <style type='text/css'>
+            .goog-logo-link {
+                display: none !important;
+            }
+
+            .goog-te-gadget {
+                color: transparent !important;
+            }
+        </style>
+
+        <div class="nav-right col-md-2" style="margin-top: -3%;">
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'en'
+                    }, 'google_translate_element');
+                }
+            </script>
+
+
+
+        </div>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        </script>
+
+
+       {{-- GOOGLE TRANSLATE ENDS HERE --}}
+
+        {{-- ADDING GOOGLE TRANSALTE TO A WEB PAGE USING HTML,CSS AND JAVASCRIPT BEGINS --}}
+        {{-- <style type='text/css'>
+            .goog-logo-link {
+                display: none !important;
+
+            }
+
+            .goog-te-gadget {
+                color: transparent !important;
+                padding-left: 10px;
+
+            }
+
+            .goog-te-gadget .goog-te-combo {
+                color: blue !important;
+
+            }
+        </style>
+        <div id="google_translate_element"></div> --}}
 
 
         {{-- <style type='text/css'>
@@ -307,7 +368,8 @@
     <script src="assets/js/side-demo.js"></script>
     <script src="assets/js/business-4.js"></script>
     <script src="assets/js/change_password.js"></script>
-    <script type="text/javascript">
+
+    {{-- <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                     pageLanguage: 'en'
@@ -318,7 +380,7 @@
     </script>
 
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
-        cb=googleTranslateElementInit"></script>
+        cb=googleTranslateElementInit"></script> --}}
 
     <style>
         .whatsapp {

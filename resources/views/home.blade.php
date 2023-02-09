@@ -109,64 +109,66 @@
             </div>
         </div>
        <br>
-        {{-- ADDING GOOGLE TRANSALTE TO A WEB PAGE USING HTML,CSS AND JAVASCRIPT BEGINS --}}
-        <style type='text/css'>
-            iframe.goog-te-banner-frame {
-                display: none !important;
+       {{-- GOOGLE TRANSLATE STARTS HERE --}}
+       <style type='text/css'>
+        .goog-logo-link {
+            display: none !important;
+
+        }
+
+        .goog-te-gadget {
+            color: transparent !important;
+            padding-left: 10px;
+
+        }
+
+        .goog-te-gadget .goog-te-combo {
+            color: blue !important;
+
+        }
+    </style>
+     <style type='text/css'>
+        iframe.goog-te-banner-frame {
+            display: none !important;
+        }
+    </style>
+
+    <style type='text/css'>
+        body {
+            position: static !important;
+            top: 0px !important;
+        }
+    </style>
+
+    <style type='text/css'>
+        .goog-logo-link {
+            display: none !important;
+        }
+
+        .goog-te-gadget {
+            color: transparent !important;
+        }
+    </style>
+
+    <div class="nav-right col-md-2" style="margin-top: -5px;">
+        <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en'
+                }, 'google_translate_element');
             }
-        </style>
-
-        <style type='text/css'>
-            body {
-                position: static !important;
-                top: 10px !important;
-
-            }
-        </style>
-
-        <style type='text/css'>
-            .goog-logo-link {
-                display: none !important;
-
-            }
-
-            .goog-te-gadget {
-                color: transparent !important;
-                padding-left: 10px;
-
-            }
-
-            .goog-te-gadget .goog-te-combo {
-                color: blue !important;
-
-            }
+        </script>
 
 
-        </style>
-        <style type="text/css">
-            .goog-te-combo {
-                max-width: 500% !important;
-                overflow: scroll !important;
-                box-sizing: border-box !important; //fixes a padding issue
-                height: auto !important; //gets rid of vertical
-            }
-        </style>
-        <div class="nav-right">
-            <div id="google_translate_element"></div>
 
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({
-                        pageLanguage: 'en'
-                    }, 'google_translate_element');
-                }
-            </script>
+    </div>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-            </script>
-        </div>
-        {{-- ADDING GOOGLE TRANSALTE TO A WEB PAGE USING HTML,CSS AND JAVASCRIPT ENDS HERE --}}
 
+   {{-- GOOGLE TRANSLATE ENDS HERE --}}
 
     </header>
     <!-- Header Section End -->

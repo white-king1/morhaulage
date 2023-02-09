@@ -20,9 +20,10 @@ class DashboardController extends Controller
            $wallet->referral_code = Auth::user()->referral_link;
 
            $wallet->save();
-            return view ('user.dashboard');
+            return redirect()->route ('user.dashboard')->with('flash_message', 'You successfully logged in to your dashboard.')
+            ->with('flash_type', 'alert-success');
 
         }
-        return view ('user.dashboard');
+        return view('user.dashboard');
     }
 }

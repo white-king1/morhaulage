@@ -254,6 +254,68 @@
                         </ul>
                     </div>
 
+                    {{-- GOOGLE TRANSLATE STARTS HERE --}}
+         <style type='text/css'>
+            .goog-logo-link {
+                display: none !important;
+
+            }
+
+            .goog-te-gadget {
+                color: transparent !important;
+                padding-left: 10px;
+
+            }
+
+            .goog-te-gadget .goog-te-combo {
+                color: blue !important;
+
+            }
+        </style>
+         <style type='text/css'>
+            iframe.goog-te-banner-frame {
+                display: none !important;
+            }
+        </style>
+
+        <style type='text/css'>
+            body {
+                position: static !important;
+                top: 0px !important;
+            }
+        </style>
+
+        <style type='text/css'>
+            .goog-logo-link {
+                display: none !important;
+            }
+
+            .goog-te-gadget {
+                color: transparent !important;
+            }
+        </style>
+
+        <div class="nav-right col-md-2" style="margin-top: 10px;">
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'en'
+                    }, 'google_translate_element');
+                }
+            </script>
+
+
+
+        </div>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        </script>
+
+
+       {{-- GOOGLE TRANSLATE ENDS HERE --}}
+
+
                     <script class="result-template" type="text/x-handlebars-template">
             <div class="ProfileCard u-cf">
             <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
@@ -265,102 +327,6 @@
                     <script class="empty-template" type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
                 </div>
             </div>
-            {{-- ADDING GOOGLE TRANSALTE TO A WEB PAGE USING HTML,CSS AND JAVASCRIPT BEGINS --}}
-
-            {{-- <style>
-                .goog-te-banner-frame.skiptranslate, .goog-te-gadget-simple img{
-                    display: none !important;
-                }
-                .goog-tooltip{
-                    display: none !important;
-                }
-                .goog-tooltip:hover{
-                    display: none !important;
-                }
-                .goo-text-highlight{
-                    background-color: black !important;
-                    border: none !important;
-                    box-shadow: none !important;
-                }
-                body{
-                    top: 0px !important;
-                }
-            </style> --}}
-            {{-- <style type='text/css'>
-            .goog-logo-link {
-                display: none !important;
-
-            }
-
-            .goog-te-gadget {
-                color: transparent !important;
-                padding-left: 10px;
-
-            }
-
-            .goog-te-gadget .goog-te-combo {
-                color: blue !important;
-
-            }
-        </style> --}}
-            <div id="google_translate_element"></div>
-
-
-            {{-- <style type='text/css'>
-            iframe.goog-te-banner-frame {
-                display: none !important;
-            }
-        </style>
-
-        <style type='text/css'>
-            body {
-                position: static !important;
-                top: 10px !important;
-
-            }
-        </style>
-
-        <style type='text/css'>
-            .goog-logo-link {
-                display: none !important;
-
-            }
-
-            .goog-te-gadget {
-                color: transparent !important;
-                padding-left: 10px;
-
-            }
-
-            .goog-te-gadget .goog-te-combo {
-                color: blue !important;
-
-            }
-        </style>
-        <style type="text/css">
-            .goog-te-combo {
-                max-width: 100% !important;
-                overflow: scroll !important;
-                box-sizing: border-box !important; //fixes a padding issue
-                height: 20% !important; //gets rid of vertical
-            }
-        </style>
-        <div class="nav-right">
-            <div id="google_translate_element"></div>
-
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({
-                        pageLanguage: 'en'
-                    }, 'google_translate_element');
-                }
-            </script>
-
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-            </script>
-        </div> --}}
-            {{-- ADDING GOOGLE TRANSALTE TO A WEB PAGE USING HTML,CSS AND JAVASCRIPT ENDS HERE --}}
-
 
         </header>
         <!-- Page Header Ends                              -->
@@ -469,26 +435,26 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-list"><a class="sidebar-link sidebar-title"
-                                    href="{{ route('profile.settings') }}">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g>
+                                        href="{{ route('profile.settings') }}">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <g>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M2.75 12C2.75 5.063 5.063 2.75 12 2.75C18.937 2.75 21.25 5.063 21.25 12C21.25 18.937 18.937 21.25 12 21.25C5.063 21.25 2.75 18.937 2.75 12Z"
-                                                    stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round"></path>
-                                                <path d="M15.9935 12H16.0025" stroke="#130F26" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path d="M11.9945 12H12.0035" stroke="#130F26" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path d="M7.9955 12H8.0045" stroke="#130F26" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <g>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M2.75 12C2.75 5.063 5.063 2.75 12 2.75C18.937 2.75 21.25 5.063 21.25 12C21.25 18.937 18.937 21.25 12 21.25C5.063 21.25 2.75 18.937 2.75 12Z"
+                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path d="M15.9935 12H16.0025" stroke="#130F26" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M11.9945 12H12.0035" stroke="#130F26" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M7.9955 12H8.0045" stroke="#130F26" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </g>
                                             </g>
-                                        </g>
-                                    </svg><span>Profile Settings</span>
-                                </a>
-                            </li>
+                                        </svg><span>Profile Settings</span>
+                                    </a>
+                                </li>
                                 <li class="sidebar-list"><a class="sidebar-link sidebar-title"
                                         href="{{ route('change.password') }}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -567,6 +533,7 @@
                     </nav>
                 </div>
             </div>
+
             <!-- Page Sidebar Ends-->
             @yield('content')
             <!-- footer start-->
@@ -635,33 +602,6 @@
             });
         });
     </script>
-
-
-
-    <script>
-        (function() {
-            "use strict";
-            $(document).on("change", ".langSel", function() {
-                window.location.href = "https://mhaulage.com/change/" + $(this).val();
-            });
-        })();
-    </script>
-
-    <div id="google_translate_element"></div>
-
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                    pageLanguage: 'en'
-                },
-                'google_translate_element'
-            );
-        }
-    </script>
-
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
-        cb=googleTranslateElementInit"></script>
-
 </body>
 
 <!-- Mirrored from admin.pixelstrap.com/zeta/theme/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Mar 2022 19:36:04 GMT -->

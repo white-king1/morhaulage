@@ -1,4 +1,6 @@
 @extends('layouts.admin_dashboard_layout')
+<br>
+<br>
 @section('content')
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
         <!-- Page Body Start-->

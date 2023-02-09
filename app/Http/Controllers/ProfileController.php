@@ -37,8 +37,8 @@ class ProfileController extends Controller
         Auth::user()->image=$imageName;
 
         Auth::user()->save();
-        return back()
-            ->with('success','You have successfully upload image.')
-            ->with('image',$imageName);
+        return back()->with('flash_message', 'You successfully updated your profile.')
+        ->with('flash_type', 'alert-success');
+            
     }
 }

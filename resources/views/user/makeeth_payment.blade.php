@@ -1,4 +1,6 @@
 @extends('layouts.dashboard_layout')
+<br>
+<br>
 @section('content')
     <div class="page-body">
         <div class="container-fluid">
