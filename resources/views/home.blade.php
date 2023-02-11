@@ -25,24 +25,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <!-- Smartsupp Live Chat script -->
-    <script type="text/javascript">
-        var _smartsupp = _smartsupp || {};
-        _smartsupp.key = '383cb9122ee084918d26efe793d807f41a5472af';
-        window.smartsupp || (function(d) {
-            var s, c, o = smartsupp = function() {
-                o._.push(arguments)
-            };
-            o._ = [];
-            s = d.getElementsByTagName('script')[0];
-            c = d.createElement('script');
-            c.type = 'text/javascript';
-            c.charset = 'utf-8';
-            c.async = true;
-            c.src = 'https://www.smartsuppchat.com/loader.js?';
-            s.parentNode.insertBefore(c, s);
-        })(document);
-    </script>
+    {{-- JIVO SMART CHART BUTTON STARTS HERE--}}
+    <script src="//code.jivosite.com/widget/yXsig7KbpE" async></script>
+    {{-- JIVO SMART CHART BUTTON ENDS HERE --}}
 </head>
 
 <body class="apbc-body" data-spy="scroll" data-target=".apbc-nav-menu" data-offset="80">
@@ -66,7 +51,7 @@
     <!-- Preloader End -->
 
     <!-- ScrollTop Button -->
-    <a href="#" class="apbc-scroll-top"><i class="fas fa-angle-double-up"></i></a>
+    <a href="" class="apbc-scroll-top"><i class="fas fa-angle-double-up"></i></a>
 
     <!-- Header Section Starts -->
     <header class="apbc-header-section" style="background-image:  url(assets/img/business-4/footer-bg.jpg)";>
@@ -175,7 +160,6 @@
 
 
     <main>
-
         <!-- Mobile Navigation -->
         <div class="apbc-mobile-navigation">
             <div class="apbc-mobile-menu-wrapper" style="margin-left:50px;">
@@ -234,47 +218,24 @@
 <br>
 <br>
         <!-- Hero Slider Area -->
-        <div class="apbc-hero-slider" id="apbc_banner">
-            <div class="apbc-single-item">
-                <span class="apbc-slide-shape-2"><img src="assets/img/business-4/sol1.jpg" alt=""></span>
-
-                <span class="apbc-slide-shape-1"><img src="assets/img/business-4/inty.jpg" alt=""></span>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="apbc-slide-left">
-                                <div class="apbc-headline">
-                                    <h4 style="font-size:4vw;">The Bigest Investment Company!</h4>
-                                </div>
-                                <div class="apbc-pera-txt">
-                                    <p style="color:white; font-size:4vw;">We take the world's toughest investments challanges
-                                        <br>and turn them into a streamlined and affordable minimum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="apbc-hero-slider" id="apbc_banner" style="margin-top: 10px;">
+            <div class="apbc-single-item" data-background="assets/img/business-4/ina.jpg">
+                <span class="apbc-slide-shape-2"><img src="assets/img/business-4/slider/shape-2.png" alt=""></span>
+                <div class="centered">
+                    <h2 class="cent"
+                        style="color:white; width:80%; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                        Morhaulage The Bigest Investment Company!! <br>
+                    </h2>
                 </div>
             </div>
             <div class="apbc-single-item" data-background="assets/img/business-4/inty.jpg">
-                {{-- <span class="apbc-slide-shape-1"><img src="assets/img/business-4/slider/shape-1.png" alt=""></span> --}}
-                <span class="apbc-slide-shape-1"><img src="assets/img/business-4/sol1.jpg" alt=""></span>
+                <span class="apbc-slide-shape-2"><img src="assets/img/business-4/slider/shape-2.png" alt=""></span>
+                <div class="centered">
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="apbc-slide-left">
-                                <div class="apbc-headline">
-                                    <h4 style="font-size:5vw;">Investments, made at an affordable minimum!</h4>
-                                    <br>
-                                    <p style="color:white; font-size:4vw;">Morhaulage Investment, the key to Financial  Growth and
-                                        Success.</p>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="cent"
+                        style="color:white; width:80%; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                        Morhaulage The key to Financial Growth & Success. <br>
+                    </h2>
                 </div>
             </div>
         </div>

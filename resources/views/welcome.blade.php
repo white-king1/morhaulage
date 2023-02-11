@@ -1,11 +1,6 @@
 @extends('layouts.app')
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
 @section('content')
     <main>
         <!-- Mobile Navigation -->
@@ -41,62 +36,35 @@
                 </div>
                 <div class="apbc-sidebar-gallery">
                     <ul>
-
                         <li>
                             <a href="#"><img src="assets/img/business-4/about/ww2.png" alt=""></a>
                         </li>
 
                     </ul>
                 </div>
-
-
             </div>
         </div>
         <!-- Header Sidebar Info End -->
 
         <!-- Hero Slider Area -->
         <div class="apbc-hero-slider" id="apbc_banner" style="margin-top: 10px;">
-            <div class="apbc-single-item">
+            <div class="apbc-single-item" data-background="assets/img/business-4/ina.jpg">
                 <span class="apbc-slide-shape-2"><img src="assets/img/business-4/slider/shape-2.png" alt=""></span>
-
-                <span class="apbc-slide-shape-1"><video src="assets/APLL-Website-Hdr-clip_1920x1080_10152020.mp4" muted
-                        autoplay></video></span>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="apbc-slide-left">
-                                <div class="apbc-headline">
-                                    <h4 style="font-size:4vw; color:white; width:150%; margin-left: -5%">The Bigest Investment Company!</h4>
-                                    <p style="color:white; font-size:3.5vw; width:190%; margin-left: -5%">Morhaulage Investment, we take the world's
-                                        toughest
-                                        investments challanges & turn them into a seamless,streamlined and affordable minimum.
-                                    </p>
-                                </div>
-                                <div class="apbc-pera-txt">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="centered">
+                    <h2 class="cent"
+                        style="color:white; width:80%; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                        <i></i> Morhaulage The Bigest Investment Company!! <br>
+                    </h2>
                 </div>
             </div>
             <div class="apbc-single-item" data-background="assets/img/business-4/inty.jpg">
-                {{-- <span class="apbc-slide-shape-1"><img src="assets/img/business-4/slider/shape-1.png" alt=""></span> --}}
                 <span class="apbc-slide-shape-2"><img src="assets/img/business-4/slider/shape-2.png" alt=""></span>
+                <div class="centered">
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="apbc-slide-left">
-                                <div class="apbc-headline">
-                                    <h4 style="font-size:5vw; color:white; width:150%;">Investments, made at an affordable minimum With Morhaulage!</h4>
-                                    <p style="color:white; font-size:3.5vw; width:190%;">The key to Financial Growth & Success.</p>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="cent"
+                        style="color:white; width:80%; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                        Morhaulage The key to Financial Growth & Success. <br>
+                    </h2>
                 </div>
             </div>
         </div>
@@ -461,7 +429,7 @@
                     <div class="row">
                         <div class="col-lg-6 order-2 order-lg-1">
                             <div class="apbc-form-left">
-                                <form action="#">
+                                <form action="">
                                     <input type="text" placeholder="Name" style="color:rgba(3, 3, 54, 0.87);">
                                     <input type="text" placeholder="Website" style="color:rgba(3, 3, 54, 0.87);">
                                     <input type="email" placeholder="Email" style="color:rgba(3, 3, 54, 0.87);">
