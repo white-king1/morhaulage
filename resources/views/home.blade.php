@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Css Fils -->
     <meta name="author" content="Themexriver">
-    <link rel="shortcut icon" href="assets/img/fv.png" type="image/x-icon">
+    {{-- <link rel="shortcut icon" href="assets/img/fv.png" type="image/x-icon"> --}}
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.css">
     <link rel="stylesheet" href="assets/css/flaticon-11.css">
@@ -21,10 +21,14 @@
     <link rel="stylesheet" href="assets/css/side-demo.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/business-4.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+    {{-- LOGO FAVICON BELOW HERE --}}
+     {{-- PLACE FAVICON ICON BELLOW HERE --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
     {{-- JIVO SMART CHART BUTTON STARTS HERE--}}
     <script src="//code.jivosite.com/widget/yXsig7KbpE" async></script>
     {{-- JIVO SMART CHART BUTTON ENDS HERE --}}

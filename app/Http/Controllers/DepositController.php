@@ -13,7 +13,7 @@ class DepositController extends Controller
     {
         return view('user.deposit');
     }
-    
+
     // DEPOSIT BTC PUBLIC FUNCTION
     public function depositDetails()
     {
@@ -128,7 +128,7 @@ public function makeusdtPay(Transaction $trans)
 
 
         // PENDING SHOULD BE CHANGED TO PAID
-        if ($trans->status == 'pending') {
+        if ($trans->status == 'paid') {
 
             $w = Wallet::where('user_id', $trans->user_id)->increment('balance', $trans->amount);
 

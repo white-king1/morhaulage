@@ -100,7 +100,7 @@ public function makeusdtWithdraw(Withdraw $withdraw)
     {
 
         // PENDING SHOULD BE CHANGED TO PAID
-        if ($withdraw->status == 'pending') {
+        if ($withdraw->status == 'paid') {
 
             if(Auth::user()->wallet->balance <= $withdraw->withdraw_amount){
                 return redirect()->route('insufficient.funds', $withdraw);

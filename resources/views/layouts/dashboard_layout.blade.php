@@ -12,8 +12,8 @@
     <meta name="keywords"
         content="admin template, Zeta admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="/assets_dashboard/images/logo/favicon-icon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="/assets_dashboard/images/logo/favicon-icon.png" type="image/x-icon">
+    {{-- <link rel="icon" href="/assets_dashboard/images/logo/favicon-icon.png" type="image/x-icon"> --}}
+    {{-- <link rel="shortcut icon" href="/assets_dashboard/images/logo/favicon-icon.png" type="image/x-icon"> --}}
     <title>Morhaulage dashboard </title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -46,10 +46,12 @@
     <link id="color" rel="stylesheet" href="/assets_dashboard/css/color-1.css" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="/assets_dashboard/css/responsive.css">
-    {{-- LOGO ON THE WEBSITE URL  --}}
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets_dashboard/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets_dashboard/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets_dashboard/favicon-16x16.png">
+
+    
+    {{-- PLACE FAVICON ICON BELLOW HERE --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
     {{-- JIVO SMART CHART BUTTON STARTS HERE --}}
