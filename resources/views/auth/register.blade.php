@@ -1,10 +1,24 @@
 @extends('layouts.app')
-<br>
-<br>
-<br>
-<br>
+
 @section('content')
-    <div class="container" style="margin-top: 100px; margin-bottom: 5%; margin-top:10%">
+<!-- Mobile Navigation -->
+<div class="apbc-mobile-navigation">
+    <div class="apbc-mobile-menu-wrapper" style="margin-left:10%;">
+        <a href="#" class="apbc-mobile-menu-close"><i class="fas fa-times"></i></a>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="{{ route('welcome') }}" class="active">Home</a></li>
+                <li><a class="nav-link" href="#apbc_about">About</a></li>
+                <li><a class="nav-link" href="#apbc_service">Investment Plans</a></li>
+                <li><a class="nav-link" href="#apbc_contact">Contact</a></li>
+                <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+                <li><a class="nav-link" href="{{ route('register') }}">Signup</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- Mobile Navigation End -->
+    <div class="container" style="margin-top: 80%;">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -110,4 +124,6 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
 @endsection

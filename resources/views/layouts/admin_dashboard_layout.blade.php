@@ -51,25 +51,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/admin_assets_dashboard/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/admin_assets_dashboard/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
-    {{-- SMART CHART SCRIPT CODE --}}
-    <script type="text/javascript">
-        var _smartsupp = _smartsupp || {};
-        _smartsupp.key = '383cb9122ee084918d26efe793d807f41a5472af';
-        window.smartsupp || (function(d) {
-            var s, c, o = smartsupp = function() {
-                o._.push(arguments)
-            };
-            o._ = [];
-            s = d.getElementsByTagName('script')[0];
-            c = d.createElement('script');
-            c.type = 'text/javascript';
-            c.charset = 'utf-8';
-            c.async = true;
-            c.src = 'https://www.smartsuppchat.com/loader.js?';
-            s.parentNode.insertBefore(c, s);
-        })(document);
-    </script>
 </head>
 
 <body>

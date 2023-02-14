@@ -86,7 +86,7 @@ class RegisterController extends Controller
 
 
 
-       
+
 
         // $user =User::with('wallet')->wallet()->create([]);
         // $user->save();

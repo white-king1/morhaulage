@@ -140,4 +140,11 @@ Route::middleware(['auth'])->prefix('user')->group(function () {
     // CHANGE PASSWORD ROUTE
     Route::get('/change_password', 'ChangepController@changePassword')->name('change.password');
     Route::post('/update_password', 'ChangepController@updatePassword')->name('update.password');
+
+    // REFERRAL COMMISSIONS
+    Route::get('/referral_commissions', 'RefcomController@refCom')->name('ref.com');
+
+    // REFERRED USERS
+    Route::get('/referred_users', 'RefusersController@refUsers')->name('ref.users');
+
 });

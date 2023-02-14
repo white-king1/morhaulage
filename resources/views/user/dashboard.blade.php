@@ -55,7 +55,7 @@
                         <h3 class="caption">Referral Code</h3>
                     <div class="input-group">
                         <input type="text" name="text" class="form-control" id="referralURL"
-                            value="{{ Auth::user()->referral_link }}" readonly>
+                            value="morhaulage.com/register?ref_code={{ Auth::user()->referral_link }}" readonly>
                         <div class="input-group-append">
                             <span class="input-group-text copytext copyBoard" id="copyBoard"
                                 onclick="myFunction()"> <i data-feather="copy"
@@ -80,7 +80,7 @@
                                         <p style="font-size: 12px;">Welcome back,your dashboard is ready!</p>
                                         <br>
                                         <h4>Available Balance::
-                                            ${{ number_format(floatval(Auth::user()->wallet->balance ?? 'unknown')) }}
+                                            ${{ number_format(Auth::user()->balance ) }}
                                         </h4>
                                     </div>
                                 </div>

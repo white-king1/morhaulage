@@ -139,7 +139,7 @@
         }
     </style>
 
-    <div class="nav-right col-md-2" style="margin-top: -5px;">
+    <div class="nav-right col-md-2" style="margin-top: -3px;">
         <div id="google_translate_element"></div>
 
         <script type="text/javascript">

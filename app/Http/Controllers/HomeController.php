@@ -16,7 +16,6 @@ class HomeController extends Controller
     {
         $this->middleware('auth');
     }
-
     /**
      * Show the application dashboard.
      *
@@ -27,7 +26,7 @@ class HomeController extends Controller
         if (Auth::user()->usertype == 'admin') {
             return redirect()->route('admin');
         } else {
-            return view('home');
+            return view('user.dashboard');
         }
 
     }

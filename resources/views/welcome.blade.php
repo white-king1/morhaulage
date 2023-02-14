@@ -11,7 +11,7 @@
                     <ul>
                         <li><a class="nav-link" href="{{ route('welcome') }}" class="active">Home</a></li>
                         <li><a class="nav-link" href="#apbc_about">About</a></li>
-                        <li><a class="nav-link" href="#apbc_service">Service</a></li>
+                        <li><a class="nav-link" href="#apbc_service">Investment Plans</a></li>
                         <li><a class="nav-link" href="#apbc_contact">Contact</a></li>
                         <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
                         <li><a class="nav-link" href="{{ route('register') }}">Signup</a></li>
@@ -48,13 +48,21 @@
 
         <!-- Hero Slider Area -->
         <div class="apbc-hero-slider" id="apbc_banner" style="margin-top: 10px;">
-            <div class="apbc-single-item" data-background="assets/img/business-4/ina.jpg">
+            <div class="apbc-single-item" data-background="assets/img/business-4/haula.jpg">
                 <span class="apbc-slide-shape-2"><img src="assets/img/business-4/slider/shape-2.png" alt=""></span>
                 <div class="centered">
-                    <h2 class="cent"
+                    <h1 class="cent"
                         style="color:white; width:80%; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
-                        <i></i> Morhaulage The Bigest Investment Company!! <br>
-                    </h2>
+                        Investments..
+                        <br>
+                        Your Way
+                    </h1>
+                    <div>
+                        <p
+                            style="color:white; width:80%; position: absolute;bottom: 50%;left: 50%;transform: translate(-50%, -50%);">
+                            For over 100 years,MorHaulage Investments has been providing Investment Plans round the Globe,Bringing
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="apbc-single-item" data-background="assets/img/business-4/inty.jpg">
@@ -63,7 +71,7 @@
 
                     <h2 class="cent"
                         style="color:white; width:80%; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
-                        Morhaulage The key to Financial Growth & Success. <br>
+                        Morhaulage, the key to financial growth & Success. <br>
                     </h2>
                 </div>
             </div>
@@ -164,13 +172,12 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="apbc-title-area wow fadeInUp">
-                            <span class="apbc-subtitle">What We do</span>
+                            <span class="apbc-subtitle">Investment Plans</span>
                             <div class="apbc-headline">
-                                <h3>The Best Business & Investment service comapny!</h3>
+                                <h3>The Best Business & Investment Plans!</h3>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="apbc-service-slider">
                     <div class="apbc-service-single">
@@ -182,18 +189,17 @@
                         </div>
                         <div class="apbc-service-content">
                             <div class="apbc-headline">
-                                <a href="#">
-                                    <h5>Liquidity Solution</h5>
+                                <a href="">
+                                    <h5>Standard Plan</h5>
                                 </a>
                             </div>
                             <div class="apbc-pera-txt">
-                                <p>
-                                    We provide liquidity in the private tech sector. Founders, early investors, and
-                                    long-term employees can realize early returns without waiting for IPO or acquisition.
-                                </p>
+                                <h4>$50.00 - $999.00</h4>
+                                <p>2% in 10 Days</p>
+                                <p>Total 20% + Capital</p>
                             </div>
                             <div class="apbc-readmore-btn">
-                                <a href="">Read more <i class="fas fa-arrow-right"></i></a>
+                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -207,15 +213,16 @@
                         <div class="apbc-service-content">
                             <div class="apbc-headline">
                                 <a href="">
-                                    <h5>Investment Plans</h5>
+                                    <h5>Pro Plan</h5>
                                 </a>
                             </div>
                             <div class="apbc-pera-txt">
-                                <p>Our Investment platform is inclusive, easy-to-use, and affordable,
-                                    We qualify accredited investors and provide access to return on investments. </p>
+                                <h4>$1,000.00 - $4,999.00</h4>
+                                <p>2.5% in 10 Days</p>
+                                <p>Total 25% + Capital</p>
                             </div>
                             <div class="apbc-readmore-btn">
-                                <a href="">Read more <i class="fas fa-arrow-right"></i></a>
+                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -224,25 +231,102 @@
                             <img src="assets/img/business-4/about/wwde.jpg" alt="">
                         </div>
                         <div class="apbc-icon-wrapper">
-                            <i class="flaticon-tax"></i>
+                            <i class="flaticon-bank-1"></i>
                         </div>
                         <div class="apbc-service-content">
                             <div class="apbc-headline">
-                                <a href="#">
-                                    <h5>Taxes Planning</h5>
+                                <a href="">
+                                    <h5>Deluxe Plan</h5>
                                 </a>
                             </div>
                             <div class="apbc-pera-txt">
-                                <p>We help with cyber resilience by SecurityScorecard, as global leader in planing your
-                                    TAXES. </p>
+                                <h4>$5,000.00 - $9,999.00</h4>
+                                <p>3% in 10 Days</p>
+                                <p>Total 30% + Capital</p>
                             </div>
                             <div class="apbc-readmore-btn">
-                                <a href="#">Read more <i class="fas fa-arrow-right"></i></a>
+                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
 
                 </div>
+
+            </div>
+            <div class="container">
+                <div class="apbc-service-slider">
+                    <div class="apbc-service-single">
+                        <div class="apbc-img-wrapper">
+                            <img src="assets/img/business-4/about/wwdc.jpg" alt="">
+                        </div>
+                        <div class="apbc-icon-wrapper">
+                            <i class="flaticon-bank-1"></i>
+                        </div>
+                        <div class="apbc-service-content">
+                            <div class="apbc-headline">
+                                <a href="">
+                                    <h5>Gold Plan</h5>
+                                </a>
+                            </div>
+                            <div class="apbc-pera-txt">
+                                <h6>$10,000.00 - $49,999.00</h6>
+                                <p>4% in 10 Days</p>
+                                <p>Total 40% + Capital</p>
+                            </div>
+                            <div class="apbc-readmore-btn">
+                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apbc-service-single">
+                        <div class="apbc-img-wrapper">
+                            <img src="assets/img/business-4/about/ww2.png" alt="">
+                        </div>
+                        <div class="apbc-icon-wrapper">
+                            <i class="flaticon-investment"></i>
+                        </div>
+                        <div class="apbc-service-content">
+                            <div class="apbc-headline">
+                                <a href="">
+                                    <h5>Business Plan</h5>
+                                </a>
+                            </div>
+                            <div class="apbc-pera-txt">
+                                <h6>$50,000.00 - $99,999.00</h6>
+                                <p>5% in 10 Days</p>
+                                <p>Total 50% + Capital</p>
+                            </div>
+                            <div class="apbc-readmore-btn">
+                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apbc-service-single">
+                        <div class="apbc-img-wrapper">
+                            <img src="assets/img/business-4/about/wwde.jpg" alt="">
+                        </div>
+                        <div class="apbc-icon-wrapper">
+                            <i class="flaticon-bank-1"></i>
+                        </div>
+                        <div class="apbc-service-content">
+                            <div class="apbc-headline">
+                                <a href="">
+                                    <h5>Car/House Plan</h5>
+                                </a>
+                            </div>
+                            <div class="apbc-pera-txt">
+                                <h6>$5,000.00 - $9,999.00</h6>
+                                <p>100% in 2 months</p>
+                                <p>Total 200% + Capital</p>
+                            </div>
+                            <div class="apbc-readmore-btn">
+                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </section>
         <!-- Service Section End -->

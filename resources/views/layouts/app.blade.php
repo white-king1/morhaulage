@@ -27,7 +27,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation.19.2/dist/jquery.validate.min.js">
     </script>
 
@@ -58,7 +58,7 @@
     <!-- Preloader End -->
 
     <!-- ScrollTop Button -->
-    <a href="#" class="apbc-scroll-top"><i class="fas fa-angle-double-up"></i></a>
+    <a href="" class="apbc-scroll-top"><i class="fas fa-angle-double-up"></i></a>
 
     <script>
         function googleTranslateElementInit() {
@@ -83,7 +83,7 @@
                         <ul>
                             <li><a class="nav-link" href="{{ route('welcome') }}" class="active">Home</a></li>
                             <li><a class="nav-link" href="#apbc_about">About</a></li>
-                            <li><a class="nav-link" href="#apbc_service">Service</a></li>
+                            <li><a class="nav-link" href="#apbc_service">Investment Plans</a></li>
                             <li><a class="nav-link" href="#apbc_contact">Contact</a></li>
 
                             <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
@@ -306,7 +306,7 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
         cb=googleTranslateElementInit"></script> --}}
 
-    <style>
+    {{-- <style>
         .whatsapp {
             position: fixed;
             left: 20px;
@@ -325,7 +325,7 @@
         <a href="https://wa.me/+17473205867" target="_blank">
             <h5><i data-feather="message-circle" style="color:yellow;"></i></h5>
         </a>
-    </div>
+    </div> --}}
 
 
 

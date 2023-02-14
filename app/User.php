@@ -10,7 +10,7 @@ use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Notifications\Notifiable;
 
 // please add implements MustVerifyEmail
-class User extends Authenticatable
+class User extends Authenticatable 
 {
     use Notifiable;
 
