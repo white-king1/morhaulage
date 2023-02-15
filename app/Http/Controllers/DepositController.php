@@ -128,7 +128,7 @@ public function makeusdtPay(Transaction $trans)
 
 
         // PENDING SHOULD BE CHANGED TO PAID
-        if ($trans->status == 'paid') {
+        if ($trans->status == 'pending') {
 
             $w = Wallet::where('user_id', $trans->user_id)->increment('balance', $trans->amount);
 

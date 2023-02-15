@@ -1,4 +1,9 @@
 @extends('layouts.app')
+@section('nav_bar')
+    <li><a class="nav-link" href="#apbc_about">About</a></li>
+    <li><a class="nav-link" href="#apbc_service">Investment Plans</a></li>
+    <li><a class="nav-link" href="#apbc_contact">Contact</a></li>
+@endsection
 <br>
 <br>
 @section('content')
@@ -27,7 +32,7 @@
             <div class="apbc_sidebar_info_content">
                 <span class="close-menu"><i class="fas fa-times"></i></span>
                 <div class="apbc_sidebar_logo">
-                    <a href="#"><img src="assets/img/business-4/new_Logo.png" alt=""></a>
+                    <a href="#"><img src="/assets/img/business-4/new_Logo.png" alt=""></a>
                 </div>
                 <div class="apbc-pera-txt">
                     <p>Morhaulage Investment,we take the world's toughest investments challanges
@@ -37,7 +42,7 @@
                 <div class="apbc-sidebar-gallery">
                     <ul>
                         <li>
-                            <a href="#"><img src="assets/img/business-4/about/ww2.png" alt=""></a>
+                            <a href="#"><img src="/assets/img/business-4/about/ww2.png" alt=""></a>
                         </li>
 
                     </ul>
@@ -48,8 +53,8 @@
 
         <!-- Hero Slider Area -->
         <div class="apbc-hero-slider" id="apbc_banner" style="margin-top: 10px;">
-            <div class="apbc-single-item" data-background="assets/img/business-4/haula.jpg">
-                <span class="apbc-slide-shape-2"><img src="assets/img/business-4/slider/shape-2.png" alt=""></span>
+            <div class="apbc-single-item" data-background="/assets/img/business-4/haula.jpg">
+                <span class="apbc-slide-shape-2"><img src="/assets/img/business-4/slider/shape-2.png" alt=""></span>
                 <div class="centered">
                     <h1 class="cent"
                         style="color:white; width:80%; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
@@ -59,14 +64,15 @@
                     </h1>
                     <div>
                         <p
-                            style="color:white; width:80%; position: absolute;bottom: 50%;left: 50%;transform: translate(-50%, -50%);">
-                            For over 100 years,MorHaulage Investments has been providing Investment Plans round the Globe,Bringing
+                            style="color:white; width:80%; position:absolute;bottom: 50%;left: 50%;transform: translate(-50%, -50%);">
+                            For over 100 years,MorHaulage Investments has been providing Investment Plans round the
+                            Globe,Bringing
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="apbc-single-item" data-background="assets/img/business-4/inty.jpg">
-                <span class="apbc-slide-shape-2"><img src="assets/img/business-4/slider/shape-2.png" alt=""></span>
+            <div class="apbc-single-item" data-background="/assets/img/business-4/inty.jpg">
+                <span class="apbc-slide-shape-2"><img src="/assets/img/business-4/slider/shape-2.png" alt=""></span>
                 <div class="centered">
 
                     <h2 class="cent"
@@ -86,7 +92,7 @@
                     <div class="col-lg-6 col-md-8">
                         <div class="apbc-about-left">
                             <div class="apbc-img-wrapper wow fadeInLeft">
-                                <img src="assets/img/business-4/about/world.png" alt="">
+                                <img src="/assets/img/business-4/about/world.png" alt="">
                             </div>
                             <div class="apbc-countarea wow fadeInUp">
                                 <div class="apbc-headline">
@@ -182,7 +188,7 @@
                 <div class="apbc-service-slider">
                     <div class="apbc-service-single">
                         <div class="apbc-img-wrapper">
-                            <img src="assets/img/business-4/about/wwdc.jpg" alt="">
+                            <img src="/assets/img/business-4/about/wwdc.jpg" alt="">
                         </div>
                         <div class="apbc-icon-wrapper">
                             <i class="flaticon-bank-1"></i>
@@ -199,13 +205,13 @@
                                 <p>Total 20% + Capital</p>
                             </div>
                             <div class="apbc-readmore-btn">
-                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
+                                <a href="{{ route('login') }}">Buy Now <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="apbc-service-single">
                         <div class="apbc-img-wrapper">
-                            <img src="assets/img/business-4/about/ww2.png" alt="">
+                            <img src="/assets/img/business-4/about/ww2.png" alt="">
                         </div>
                         <div class="apbc-icon-wrapper">
                             <i class="flaticon-investment"></i>
@@ -222,13 +228,13 @@
                                 <p>Total 25% + Capital</p>
                             </div>
                             <div class="apbc-readmore-btn">
-                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
+                                <a href="{{ route('login') }}">Buy Now <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="apbc-service-single">
                         <div class="apbc-img-wrapper">
-                            <img src="assets/img/business-4/about/wwde.jpg" alt="">
+                            <img src="/assets/img/business-4/about/wwde.jpg" alt="">
                         </div>
                         <div class="apbc-icon-wrapper">
                             <i class="flaticon-bank-1"></i>
@@ -245,7 +251,7 @@
                                 <p>Total 30% + Capital</p>
                             </div>
                             <div class="apbc-readmore-btn">
-                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
+                                <a href="{{ route('login') }}">Buy Now <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -257,7 +263,7 @@
                 <div class="apbc-service-slider">
                     <div class="apbc-service-single">
                         <div class="apbc-img-wrapper">
-                            <img src="assets/img/business-4/about/wwdc.jpg" alt="">
+                            <img src="/assets/img/business-4/about/wwdc.jpg" alt="">
                         </div>
                         <div class="apbc-icon-wrapper">
                             <i class="flaticon-bank-1"></i>
@@ -274,13 +280,13 @@
                                 <p>Total 40% + Capital</p>
                             </div>
                             <div class="apbc-readmore-btn">
-                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
+                                <a href="{{ route('login') }}">Buy Now <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="apbc-service-single">
                         <div class="apbc-img-wrapper">
-                            <img src="assets/img/business-4/about/ww2.png" alt="">
+                            <img src="/assets/img/business-4/about/ww2.png" alt="">
                         </div>
                         <div class="apbc-icon-wrapper">
                             <i class="flaticon-investment"></i>
@@ -297,13 +303,13 @@
                                 <p>Total 50% + Capital</p>
                             </div>
                             <div class="apbc-readmore-btn">
-                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
+                                <a href="{{ route('login') }}">Buy Now <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="apbc-service-single">
                         <div class="apbc-img-wrapper">
-                            <img src="assets/img/business-4/about/wwde.jpg" alt="">
+                            <img src="/assets/img/business-4/about/wwde.jpg" alt="">
                         </div>
                         <div class="apbc-icon-wrapper">
                             <i class="flaticon-bank-1"></i>
@@ -320,7 +326,7 @@
                                 <p>Total 200% + Capital</p>
                             </div>
                             <div class="apbc-readmore-btn">
-                                <a href="{{route('login')}}">Buy Now <i class="fas fa-arrow-right"></i></a>
+                                <a href="{{ route('login') }}">Buy Now <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -332,7 +338,7 @@
         <!-- Service Section End -->
 
         <!-- Video Section -->
-        <section class="apbc-video-section" data-background="assets/img/business-4/about/wwdg.png">
+        <section class="apbc-video-section" data-background="/assets/img/business-4/about/wwdg.png">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-1 order-2">
@@ -424,7 +430,7 @@
         <!-- Project Section End -->
 
         <!-- Skills Section -->
-        <section class="apbc-skills-section" data-background="assets/img/business-4/skills-bg.jpg">
+        <section class="apbc-skills-section" data-background="/assets/img/business-4/skills-bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -526,7 +532,7 @@
                         <div class="col-lg-6 order-1 order-lg-2">
                             <div class="apbc-form-right wow fadeInRight">
                                 <div class="apbc-img-wrapper">
-                                    <img src="assets/img/business-4/support.jpg" alt="">
+                                    <img src="/assets/img/business-4/support.jpg" alt="">
                                 </div>
                             </div>
                         </div>

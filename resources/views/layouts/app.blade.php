@@ -9,22 +9,22 @@
     <!--Css Fils -->
     <meta name="author" content="Themexriver">
     {{-- <link rel="shortcut icon" href="assets/img/fv.png" type="image/x-icon"> --}}
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
-    <link rel="stylesheet" href="assets/css/flaticon-11.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/video.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="assets/css/rs6.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/side-demo.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/business-4.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="/assets/css/flaticon-11.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/video.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/assets/css/rs6.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/side-demo.css">
+    <link rel="stylesheet" href="/assets/css/slick-theme.css">
+    <link rel="stylesheet" href="/assets/css/business-4.css">
 
     {{-- PLACE FAVICON ICON BELLOW HERE --}}
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    {{-- <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"> --}}
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
@@ -69,12 +69,12 @@
     </script>
     <script src="'http://translate.google.com/translate_a/element.js?cb=goggleTranslateElementInit"></script>
     <!-- Header Section Starts -->
-    <header class="apbc-header-section" style="background-image:  url(assets/img/business-4/footer-bg.jpg)";>
-        <div class="container">
+    <header class="apbc-header-section" style="background-image:  url(/assets/img/business-4/footer-bg.jpg)";>
+        <div class="container" >
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-6 col-7">
                     <div class="apbc-logo-wrapper">
-                        <a href="{{ route('welcome') }}"><img src="assets/img/business-4/new_Logo.png"
+                        <a href="{{ route('welcome') }}"><img src="/assets/img/business-4/new_Logo.png"
                                 alt=""></a>
                     </div>
                 </div>
@@ -82,9 +82,7 @@
                     <div class="apbc-nav-menu">
                         <ul>
                             <li><a class="nav-link" href="{{ route('welcome') }}" class="active">Home</a></li>
-                            <li><a class="nav-link" href="#apbc_about">About</a></li>
-                            <li><a class="nav-link" href="#apbc_service">Investment Plans</a></li>
-                            <li><a class="nav-link" href="#apbc_contact">Contact</a></li>
+                            @yield('nav_bar')
 
                             <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
                             <li><a class="nav-link" href="{{ route('register') }}">Signup</a></li>
@@ -100,6 +98,21 @@
                         <a href="#"><i class="fas fa-bars"></i></a>
                     </div>
                 </div>
+            </div>
+
+            <div class="nav-right col-md-2" style="margin-top: 0%; position: fixed;   height: 50%;">
+                <div id="google_translate_element" style="width:10%; margin-top:-2%;"></div>
+
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'en'
+                        }, 'google_translate_element');
+                    }
+                </script>
+
+
+
             </div>
         </div>
         <br>
@@ -143,21 +156,7 @@
                 color: transparent !important;
             }
         </style>
-
-        <div class="nav-right col-md-2" style="margin-top: -3%;">
-            <div id="google_translate_element"></div>
-
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({
-                        pageLanguage: 'en'
-                    }, 'google_translate_element');
-                }
-            </script>
-
-
-
-        </div>
+        {{-- REPLACE --}}
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
         </script>
 
@@ -166,8 +165,9 @@
 
 
     @yield('content')
+   
     <!-- Footer Section -->
-    <footer class="apbc-footer-section" data-background="assets/img/business-4/footer-bg.jpg">
+    <footer class="apbc-footer-section" data-background="/assets/img/business-4/footer-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -227,25 +227,25 @@
                         <div class="apbc-footer-gallery">
                             <ul>
                                 <li>
-                                    <img src="assets/img/business-4/gal1.jpg" alt="">
+                                    <img src="/assets/img/business-4/gal1.jpg" alt="">
                                     <div class="apbc-ft-gl-overlay">
                                         <a href="#"><i class="far fa-image"></i></a>
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="assets/img/business-4/gal2.jpg" alt="">
+                                    <img src="/assets/img/business-4/gal2.jpg" alt="">
                                     <div class="apbc-ft-gl-overlay">
                                         <a href="#"><i class="far fa-image"></i></a>
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="assets/img/business-4/gal3.jpg" alt="">
+                                    <img src="/assets/img/business-4/gal3.jpg" alt="">
                                     <div class="apbc-ft-gl-overlay">
                                         <a href="#"><i class="far fa-image"></i></a>
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="assets/img/business-4/gal4.jpg" alt="">
+                                    <img src="/assets/img/business-4/gal4.jpg" alt="">
                                     <div class="apbc-ft-gl-overlay">
                                         <a href="#"><i class="far fa-image"></i></a>
                                     </div>
@@ -273,25 +273,25 @@
     <!-- Footer Section End -->
 
     <!-- For Js Library -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/appear.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/typer-new.js"></script>
-    <script src="assets/js/progress-bar.js"></script>
-    <script src="assets/js/rbtools.min.js"></script>
-    <script src="assets/js/rs6.min.js"></script>
-    <script src="assets/js/side-demo.js"></script>
-    <script src="assets/js/business-4.js"></script>
-    <script src="assets/js/change_password.js"></script>
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/appear.js"></script>
+    <script src="/assets/js/slick.js"></script>
+    <script src="/assets/js/owl.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <script src="/assets/js/waypoints.min.js"></script>
+    <script src="/assets/js/swiper.min.js"></script>
+    <script src="/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/typer-new.js"></script>
+    <script src="/assets/js/progress-bar.js"></script>
+    <script src="/assets/js/rbtools.min.js"></script>
+    <script src="/assets/js/rs6.min.js"></script>
+    <script src="/assets/js/side-demo.js"></script>
+    <script src="/assets/js/business-4.js"></script>
+    <script src="/assets/js/change_password.js"></script>
 
     {{-- <script type="text/javascript">
         function googleTranslateElementInit() {

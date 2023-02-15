@@ -7,9 +7,6 @@
         <nav>
             <ul>
                 <li><a class="nav-link" href="{{ route('welcome') }}" class="active">Home</a></li>
-                <li><a class="nav-link" href="#apbc_about">About</a></li>
-                <li><a class="nav-link" href="#apbc_service">Investment Plans</a></li>
-                <li><a class="nav-link" href="#apbc_contact">Contact</a></li>
                 <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
                 <li><a class="nav-link" href="{{ route('register') }}">Signup</a></li>
             </ul>
@@ -17,9 +14,19 @@
     </div>
 </div>
 <!-- Mobile Navigation End -->
-<div class="container" style="margin-top: 80%; ">
+<div class="container" style="margin-bottom: 10%; margin-top: 18%; ">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class=" col-md-6">
+            <div class="apbc-headline">
+                <img class="img-fluid" src="/assets/img/business-4/lgin.png" alt="forgot password" width="50" height="30" >
+                <center>
+                    <h6>  QUICKLY LOGIN  AND GAIN  FULL  ACCESS</h6>
+
+                </center>
+            </div>
+
+        </div>
+        <div class="col-md-6">
             <div class="card" >
                 <div class="card-header">{{ __('Login') }}</div>
 

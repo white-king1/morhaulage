@@ -8,9 +8,10 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Notifications\Notifiable;
+use App\ResetPasswordNotification;
 
 // please add implements MustVerifyEmail
-class User extends Authenticatable 
+class User extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;
 
@@ -41,10 +42,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function sendPasswordResetNotification($token)
-    {
-        $this->notify(new ResetPasswordNotification($token));
-    }
+    // public function sendPasswordResetNotification($token)
+    // {
+    //     $this->notify(new ResetPasswordNotification($token));
+    // }
     /**
      * Get the wallet associated with the User
      *

@@ -2,7 +2,33 @@
 <br>
 <br>
 @section('content')
-<div class="container">
+<!-- Mobile Navigation -->
+<div class="apbc-mobile-navigation">
+    <div class="apbc-mobile-menu-wrapper" style="margin-left:10%;">
+        <a href="#" class="apbc-mobile-menu-close"><i class="fas fa-times"></i></a>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="{{ route('welcome') }}" class="active">Home</a></li>
+                <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+                <li><a class="nav-link" href="{{ route('register') }}">Signup</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- Mobile Navigation End -->
+
+<div class="container" style=" margin-bottom:10%;">
+    <div class="apbc-headline">
+        <div class="col-md-4">
+            <img class="img-fluid" src="/assets/img/business-4/fgp.png" alt="forgot password" width="100" height="50" >
+
+        </div>
+        <center>
+            <h6> FOR A QUICK RESET OF YOUR PASSWORD FOLOW THE INSTRUCTIONS BELOW</h6>
+
+        </center>
+    </div>
+    <br>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

@@ -55,7 +55,7 @@
                                                                                 </div>
                                                                                 <br>
                                                                                 <div class="product-price">
-                                                                                    <h2>${{ number_format(Auth::user()->balance ) }}
+                                                                                    <h2>${{ number_format(Auth::user()->wallet->balance ) }}
                                                                                     </h2>
                                                                                 </div>
                                                                                 <br>
@@ -83,7 +83,7 @@
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
-                                                                <h2>${{ number_format(Auth::user()->balance ) }}
+                                                                <h2>${{ number_format(Auth::user()->wallet->balance ) }}
                                                                 </h2>
                                                             </div>
                                                             <br>
@@ -122,7 +122,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
-                                                                                <h2>${{ number_format(Auth::user()->balance ) }}
+                                                                                <h2>${{ number_format(Auth::user()->wallet->balance ) }}
                                                                                 </h2>
                                                                             </div>
                                                                             <br>
@@ -150,7 +150,7 @@
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
-                                                                <h2>${{ number_format(Auth::user()->balance ) }}
+                                                                <h2>${{ number_format(Auth::user()->wallet->balance ) }}
                                                                 </h2>
                                                             </div>
                                                             <br>

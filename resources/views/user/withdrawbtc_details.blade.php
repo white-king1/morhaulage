@@ -28,7 +28,7 @@
             <div class="col-xxl-10 col-md-10 mx-auto box-col-10">
                 <div class="card">
                     <div class="col-md-6">
-                        <img src="assets_dashboard/images/bitcoinnew.jpg"alt="btc" style="margin-left: 400px; padding-top:50px;">
+                        <img src="/assets_dashboard/images/bitcoinnew.jpg"alt="btc" style="margin-left: 400px; padding-top:50px;">
                     </div>
                     <div class="card-body">
                         <div class="row">

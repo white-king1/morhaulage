@@ -1,6 +1,5 @@
 @extends('layouts.app')
-<br>
-<br>
+
 @section('content')
 <!-- Mobile Navigation -->
 <div class="apbc-mobile-navigation">
@@ -19,7 +18,7 @@
     </div>
 </div>
 <!-- Mobile Navigation End -->
-<div class="container" style="margin-top: 80%;">
+<div class="container" style="margin-top: 300px;">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -31,6 +30,7 @@
                         <input type="hidden" name="token" value="{{ $token }}">
 
                         <div class="form-group row">
+                            <span></span>
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">

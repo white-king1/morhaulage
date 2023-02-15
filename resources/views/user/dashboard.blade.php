@@ -80,7 +80,7 @@
                                         <p style="font-size: 12px;">Welcome back,your dashboard is ready!</p>
                                         <br>
                                         <h4>Available Balance::
-                                            ${{ number_format(Auth::user()->balance ) }}
+                                            ${{ number_format(Auth::user()->wallet->balance ) }}
                                         </h4>
                                     </div>
                                 </div>
