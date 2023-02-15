@@ -59,7 +59,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
 });
 
 
-// USERS MIDDLEWARE AUTHENTICATION ACCESS ROUTE note:please add ,'verified'
+// USERS MIDDLEWARE AUTHENTICATION ACCESS ROUTE note:please add ,'verified' after 'auth'
 Route::middleware(['auth'])->prefix('user')->group(function () {
 
     Route::get('/', 'DashboardController@index')->name('user.dashboard');
