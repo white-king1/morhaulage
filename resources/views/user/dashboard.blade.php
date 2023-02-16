@@ -80,7 +80,7 @@
                                         <p style="font-size: 12px;">Welcome back,your dashboard is ready!</p>
                                         <br>
                                         <h4>Available Balance::
-                                            ${{ number_format(Auth::user()->wallet->balance ) }}
+                                            ${{ number_format(Auth::user()->balance ) }}
                                         </h4>
                                     </div>
                                 </div>
@@ -150,7 +150,7 @@
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
-                                                                <h2>${{ number_format(floatval(Auth::user()->wallet->balance ?? 'unknown')) }}
+                                                                <h2>${{ number_format(floatval(Auth::user()->balance ?? 'unknown')) }}
                                                                 </h2>
                                                             </div>
                                                             <br>
