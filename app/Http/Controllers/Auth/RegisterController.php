@@ -56,7 +56,8 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'phone' => ['required', 'string', 'min:8', ]
+            'phone' => ['required', 'string', 'min:8', ],
+
         ]);
     }
 
@@ -75,7 +76,7 @@ class RegisterController extends Controller
 
 
 
-         return User::create([
+         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'phone'=>$data['phone'],
@@ -83,16 +84,16 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
 
+        $user->save();
+
+        $user->wallet()->create([
+            'balance' => 5,
+            'pending_balance' =>0,
+            'referral_link'=> $referral_link,
+        ]);
 
 
-
-
-
-        // $user =User::with('wallet')->wallet()->create([]);
-        // $user->save();
-
-
-
+        return $user;
 
     }
 

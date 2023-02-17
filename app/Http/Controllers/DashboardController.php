@@ -11,7 +11,6 @@ class DashboardController extends Controller
 {
     public function index()
     {
-
         $wallet = Wallet::where('user_id', Auth::user()->id)->exists();
 
         if ( $wallet == false) {

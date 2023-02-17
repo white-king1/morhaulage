@@ -79,7 +79,7 @@
                                         <p style="font-size: 12px;">Welcome back,your dashboard is ready!</p>
                                         <br>
                                         <h4>Available Balance::
-                                            ${{ number_format(Auth::user()->balance) }}
+                                            ${{ number_format(Auth::user()->wallet->balance) }}
                                         </h4>
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@
                                                                                 </div>
                                                                                 <br>
                                                                                 <div class="product-price">
-                                                                                    <h2>${{ number_format(Auth::user()->balance) }}</h2>
+                                                                                    <h2>${{ number_format(Auth::user()->wallet->balance) }}</h2>
                                                                                 </div>
                                                                                 <br>
                                                                                 <a class="btn btn-secondary">
@@ -149,7 +149,7 @@
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
-                                                                <h2>${{ number_format(Auth::user()->balance) }}
+                                                                <h2>${{ number_format(Auth::user()->wallet->balance) }}
                                                                 </h2>
                                                             </div>
                                                             <br>

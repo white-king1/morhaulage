@@ -25,7 +25,7 @@ class TransferController extends Controller
         $trf->save();
 
         if ($trf->save()) {
-            $all_tfs= User::where('referral_link',$request->referral_link)->first();
+            $all_tfs= Wallet::where('referral_link',$request->referral_link)->first();
             $all_tfs->balance += $trf->transfer_amount;
             $all_tfs->save();
             return redirect()->back()->with('flash_message', 'Your Transfer Was Successfull.')->with('flash_type', 'alert-success');

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\Wallet;
 use App\Withdraw;
 use Illuminate\Http\Request;
@@ -100,21 +101,30 @@ public function makeusdtWithdraw(Withdraw $withdraw)
     {
 
         // PENDING SHOULD BE CHANGED TO PAID
-       
+
         if ($withdraw->status == 'pending') {
 
+        //    $all_wids = User::where('referral_link',$withdraw->referral_link)->first();
+        //     $all_wids->balance <=$withdraw->withdraw_amount;
+        //     return redirect()->route('insufficient.funds', $withdraw);
+        //     }else{
+        //         $all_wids = User::where('referral_link',$withdraw->referral_link)->first();
+        //         $all_wids->balance -= $withdraw->withdraw_amount;
+        //         return view('user.congrats_withdraw', $withdraw);
 
-            if(Auth::user()->wallet->balance <= $withdraw->withdraw_amount){
+
+           if(Auth::user()->wallet->balance <= $withdraw->withdraw_amount){
                 return redirect()->route('insufficient.funds', $withdraw);
             }else {
+
                 $d = Wallet::where('user_id', $withdraw->user_id)->decrement('balance', $withdraw->withdraw_amount);
 
             return view('user.congrats_withdraw',$withdraw);
 
             }
-            // $d = Wallet::where('user_id', $withdraw->user_id)->decrement('balance', $withdraw->withdraw_amount);
+            $d = Wallet::where('user_id', $withdraw->user_id)->decrement('balance', $withdraw->withdraw_amount);
 
-            // return view('user.congrats_withdraw');
+            return view('user.congrats_withdraw');
         }
     }
 

@@ -77,7 +77,7 @@
                                         </td>
                                         <td class="img-content-box">
                                             <h6>
-                                                ${{ number_format($user->balance ) }}
+                                                ${{ number_format($user->wallet->balance ) }}
                                             </h6>
                                         </td>
                                         <td class="img-content-box">

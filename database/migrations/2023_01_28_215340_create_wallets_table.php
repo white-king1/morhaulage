@@ -18,7 +18,7 @@ class CreateWalletsTable extends Migration
             $table->integer('user_id');
             $table->double('balance')->default('5');
             $table->double('pending_balance')->default('0');
-            $table->string('referral_code');
+            $table->string('referral_link');
             $table->timestamps();
         });
     }
