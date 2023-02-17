@@ -23,7 +23,6 @@ class ChangepController extends Controller
 
      $current_user=auth()->user();
       if(Hash::check($request->current_password,$current_user->password)){
-
         $current_user->update([
             'password'=>bcrypt($request->new_password)
         ]);

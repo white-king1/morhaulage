@@ -66,7 +66,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Container-fluid starts-->
         <div class="container-fluid default-dash">
             <div class="row">
@@ -80,7 +79,7 @@
                                         <p style="font-size: 12px;">Welcome back,your dashboard is ready!</p>
                                         <br>
                                         <h4>Available Balance::
-                                            ${{ number_format(Auth::user()->balance ) }}
+                                            ${{ number_format(Auth::user()->balance) }}
                                         </h4>
                                     </div>
                                 </div>
@@ -123,7 +122,7 @@
                                                                                 </div>
                                                                                 <br>
                                                                                 <div class="product-price">
-                                                                                    <h2>$5</h2>
+                                                                                    <h2>${{ number_format(Auth::user()->balance) }}</h2>
                                                                                 </div>
                                                                                 <br>
                                                                                 <a class="btn btn-secondary">
@@ -150,7 +149,7 @@
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
-                                                                <h2>${{ number_format(floatval(Auth::user()->balance ?? 'unknown')) }}
+                                                                <h2>${{ number_format(Auth::user()->balance) }}
                                                                 </h2>
                                                             </div>
                                                             <br>

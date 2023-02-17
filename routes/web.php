@@ -147,4 +147,7 @@ Route::middleware(['auth'])->prefix('user')->group(function () {
     // REFERRED USERS
     Route::get('/referred_users', 'RefusersController@refUsers')->name('ref.users');
 
+    // TO RE-INVEST YOUR TOTAL BALANCE
+    Route::get('/re-invest_balance', 'ReinvestController@reinvestBalance')->name('reinvest.balance');
+
 });

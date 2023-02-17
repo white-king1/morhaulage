@@ -73,10 +73,10 @@
                                                 <tr>
                                                     <td>
                                                         <div class="media"><img class="img-fluid me-3 b-r-5"
-                                                                src="../assets/images/dashboard/rectangle-26.jpg"
+                                                                src="/assets/images/dashboard/rectangle-26.jpg"
                                                                 alt="">
                                                             <div class="media-body"><a href="blog-single.html">
-                                                                    <h5>Google Project Apply Reviwe</h5>
+                                                                    <h5>Google Project Apply Review</h5>
                                                                 </a>
                                                                 <p>Today's News Headlines, Breaking...</p>
                                                             </div>
@@ -88,7 +88,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="media"> <img class="img-fluid me-3 b-r-5"
-                                                                src="../assets/images/dashboard/rectangle-27.jpg"
+                                                                src="/assets/images/dashboard/rectangle-27.jpg"
                                                                 alt="">
                                                             <div class="media-body"><a href="blog-single.html">
                                                                     <h5>Business Logo Create</h5>
@@ -103,7 +103,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="media"><img class="img-fluid me-3 b-r-5"
-                                                                src="../assets/images/dashboard/rectangle-28.jpg"
+                                                                src="/assets/images/dashboard/rectangle-28.jpg"
                                                                 alt="">
                                                             <div class="media-body"><a href="blog-single.html">
                                                                     <h5>Business Project Research</h5>
@@ -118,7 +118,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="media"><img class="img-fluid me-3 b-r-5"
-                                                                src="../assets/images/dashboard/rectangle-29.jpg"
+                                                                src="/assets/images/dashboard/rectangle-29.jpg"
                                                                 alt="">
                                                             <div class="media-body"><a href="blog-single.html">
                                                                     <h5>Recruitment in it Department</h5>
@@ -133,7 +133,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="media"><img class="img-fluid me-3 b-r-5"
-                                                                src="../assets/images/dashboard/rectangle-28.jpg"
+                                                                src="/assets/images/dashboard/rectangle-28.jpg"
                                                                 alt="">
                                                             <div class="media-body"><a href="blog-single.html">
                                                                     <h5>Business Project Research</h5>
@@ -189,7 +189,7 @@
                                                     <td>
                                                         <div class="media">
                                                             <div class="square-box me-2"><img class="img-fluid b-r-5"
-                                                                    src="../assets/images/avtar/boy.png" alt="">
+                                                                    src="/assets/images/avtar/boy.png" alt="">
                                                             </div>
                                                             <div class="media-body ps-2">
                                                                 <div class="avatar-details"><a href="product-page.html">
@@ -212,7 +212,7 @@
                                                     <td>
                                                         <div class="media">
                                                             <div class="square-box me-2"><img class="img-fluid b-r-5"
-                                                                    src="../assets/images/avtar/girl.png" alt="">
+                                                                    src="/assets/images/avtar/girl.png" alt="">
                                                             </div>
                                                             <div class="media-body ps-2">
                                                                 <div class="avatar-details"><a href="product-page.html">
@@ -235,7 +235,7 @@
                                                     <td>
                                                         <div class="media">
                                                             <div class="square-box me-2"><img class="img-fluid b-r-5"
-                                                                    src="../assets/images/avtar/man.png" alt="">
+                                                                    src="/assets/images/avtar/man.png" alt="">
                                                             </div>
                                                             <div class="media-body ps-2">
                                                                 <div class="avatar-details"><a href="product-page.html">
@@ -258,7 +258,7 @@
                                                     <td>
                                                         <div class="media">
                                                             <div class="square-box me-2"><img class="img-fluid b-r-5"
-                                                                    src="../assets/images/avtar/woman.png" alt="">
+                                                                    src="/assets/images/avtar/woman.png" alt="">
                                                             </div>
                                                             <div class="media-body ps-2">
                                                                 <div class="avatar-details"><a href="product-page.html">
@@ -310,7 +310,7 @@
                                                     <td>
                                                         <div class="media">
                                                             <div class="square-box me-2"><img class="img-fluid b-r-5"
-                                                                    src="../assets/images/avtar/teacher.png"
+                                                                    src="/assets/images/avtar/teacher.png"
                                                                     alt="">
                                                             </div>
                                                             <div class="media-body"><a href="user-profile.html">
@@ -327,7 +327,7 @@
                                                     <td>
                                                         <div class="media">
                                                             <div class="square-box me-2"><img class="img-fluid b-r-5"
-                                                                    src="../assets/images/avtar/teenager.png"
+                                                                    src="/assets/images/avtar/teenager.png"
                                                                     alt="">
                                                             </div>
                                                             <div class="media-body"><a href="user-profile.html">
@@ -349,7 +349,7 @@
                                                     <td>
                                                         <div class="media">
                                                             <div class="square-box me-2"><img class="img-fluid b-r-5"
-                                                                    src="../assets/images/avtar/chinese.png"
+                                                                    src="/assets/images/avtar/chinese.png"
                                                                     alt="">
                                                             </div>
                                                             <div class="media-body image-swipe"><a
@@ -362,7 +362,7 @@
                                                                     <div class="row gallery">
                                                                         <figure class="inner-img ms-3"
                                                                             itemprop="associatedMedia" itemscope=""><a
-                                                                                href="../assets/images/dashboard/img-26.jpg"
+                                                                                href="/assets/images/dashboard/img-26.jpg"
                                                                                 itemprop="contentUrl"
                                                                                 data-size="600x600"><img
                                                                                     class="img-fluid img-40"
@@ -374,11 +374,11 @@
                                                                         </figure>
                                                                         <figure class="inner-img ms-3"
                                                                             itemprop="associatedMedia" itemscope=""><a
-                                                                                href="../assets/images/dashboard/image-20.jpg"
+                                                                                href="/assets/images/dashboard/image-20.jpg"
                                                                                 itemprop="contentUrl"
                                                                                 data-size="600x600"><img
                                                                                     class="img-fluid img-40"
-                                                                                    src="../assets/images/dashboard/image-20.jpg"
+                                                                                    src="/assets/images/dashboard/image-20.jpg"
                                                                                     itemprop="thumbnail"
                                                                                     alt="Image description"></a>
                                                                             <figcaption itemprop="caption description">
