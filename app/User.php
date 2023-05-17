@@ -11,7 +11,7 @@ use Illuminate\Notifications\Notifiable;
 use App\ResetPasswordNotification;
 
 // please add implements MustVerifyEmail
-class User extends Authenticatable 
+class User extends Authenticatable
 {
     use Notifiable;
 
@@ -64,5 +64,10 @@ class User extends Authenticatable
     public function withdraw(): HasMany
     {
         return $this->hasMany(Withdraw::class);
+    }
+
+    public function referrals(): HasMany
+    {
+        return $this->hasMany(User::class, 'referral_user_id', 'id');
     }
 }

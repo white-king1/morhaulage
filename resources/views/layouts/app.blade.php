@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Morhaulage Investment</title>
+    <title>Morhaulage Investment-We are Experts in Investments World-Wide</title>
+    <meta name="description" content="Find an Investment Plan You can Afford and keep up your cash flow now with us!
+    Search For an Investment Plan at Morhaulage.com
+    Trusted For Many Years. Immediate Response.">
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Css Fils -->
@@ -165,7 +168,7 @@
 
 
     @yield('content')
-   
+
     <!-- Footer Section -->
     <footer class="apbc-footer-section" data-background="/assets/img/business-4/footer-bg.jpg">
         <div class="container">

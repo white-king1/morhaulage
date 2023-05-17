@@ -188,7 +188,8 @@
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
-                                                                                <h2>${{ number_format(floatval(Auth::user()->trans->amount ?? 'unknown')) }}
+                                                                                <h2>
+                                                                                    ${{ number_format(Auth::user()->wallet->invest_balance) }}
                                                                                 </h2>
                                                                             </div>
                                                                             <br>
@@ -216,7 +217,8 @@
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
-                                                                <h2>${{ number_format(floatval(Auth::user()->trans->amount ?? 'unknown')) }}
+                                                                <h2>
+                                                                    ${{ number_format(Auth::user()->wallet->invest_balance) }}
                                                                 </h2>
                                                             </div>
                                                             <br>
@@ -256,7 +258,8 @@
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
-                                                                                <h2>${{ number_format(floatval(Auth::user()->trans->amount ?? 'unknown')) }}
+                                                                                <h2>
+                                                                                    ${{ number_format(Auth::user()->wallet->totalinvest_balance) }}
                                                                                 </h2>
                                                                             </div>
                                                                             <br>
@@ -284,7 +287,8 @@
                                                             </div>
                                                             <br>
                                                             <div class="product-price">
-                                                                <h2>${{ number_format(floatval(Auth::user()->trans->amount ?? 'unknown')) }}
+                                                                <h2>
+                                                                    ${{ number_format(Auth::user()->wallet->totalinvest_balance) }}
                                                                 </h2>
                                                             </div>
                                                             <br>

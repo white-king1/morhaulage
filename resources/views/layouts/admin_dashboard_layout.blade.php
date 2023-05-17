@@ -46,7 +46,7 @@
     <link id="color" rel="stylesheet" href="/admin_assets_dashboard/css/color-1.css" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="/admin_assets_dashboard/css/responsive.css">
-    {{--LOGO ON THE WEBSITE URL  --}}
+    {{-- LOGO ON THE WEBSITE URL  --}}
     <link rel="apple-touch-icon" sizes="180x180" href="/admin_assets_dashboard/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/admin_assets_dashboard/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/admin_assets_dashboard/favicon-16x16.png">
@@ -259,13 +259,20 @@
 
                     <script class="result-template" type="text/x-handlebars-template">
                     </script>
-            <div class="ProfileCard u-cf">
-            <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
-            <div class="ProfileCard-details">
-            <div class="ProfileCard-realName"></div>
-            </div>
-            </div>
-          </script>
+                    <div class="ProfileCard u-cf">
+                        <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-airplay m-0">
+                                <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1">
+                                </path>
+                                <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                            </svg></div>
+                        <div class="ProfileCard-details">
+                            <div class="ProfileCard-realName"></div>
+                        </div>
+                    </div>
+                    </script>
                     <script class="empty-template" type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
                 </div>
             </div>
@@ -333,8 +340,8 @@
                 <div>
                     <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light"
                                 src="/admin_assets_dashboard/images/logo/Logz.png" alt=""><img
-                                class="img-fluid for-dark"
-                                src="/admin_assets_dashboard/images/logo/Logz.png" alt=""></a>
+                                class="img-fluid for-dark" src="/admin_assets_dashboard/images/logo/Logz.png"
+                                alt=""></a>
                         <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                     </div>
                     <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid"
@@ -344,7 +351,8 @@
                         <div id="sidebar-menu">
                             <ul class="sidebar-links" id="simple-bar">
                                 <li class="back-btn"><a href="">
-                                    <img class="img-fluid" src="/admin_assets_dashboard/images/logo/Logz.png" alt=""></a>
+                                        <img class="img-fluid" src="/admin_assets_dashboard/images/logo/Logz.png"
+                                            alt=""></a>
                                     <div class="mobile-back text-end"><span>Back</span><i
                                             class="fa fa-angle-right ps-2" aria-hidden="true"> </i></div>
                                 </li>
@@ -368,7 +376,8 @@
                                 </li>
 
                                 {{-- START HERE  --}}
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="{{route('all.users')}}">
+                                <li class="sidebar-list"><a class="sidebar-link sidebar-title"
+                                        href="{{ route('all.users') }}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g>
@@ -421,7 +430,7 @@
                                 </li>
 
                                 <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
-                                        href="{{route('all.withdrawals')}}">
+                                        href="{{ route('all.withdrawals') }}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g>
@@ -446,7 +455,7 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
-                                        href="{{route('new.transfer')}}">
+                                        href="{{ route('new.transfer') }}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g>
@@ -464,6 +473,47 @@
                                             </g>
                                         </svg><span>Transfers</span></a>
                                 </li>
+
+                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
+                                        href="{{ route('invest.trans') }}">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g>
+                                                <g>
+                                                    <path d="M11.879 14.791V2.75" stroke="#130F26" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M14.795 11.8643L11.879 14.7923L8.96301 11.8643"
+                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M16.3702 7.25879C19.9492 7.58879 21.2502 8.92879 21.2502 14.2588C21.2502 21.3588 18.9392 21.3588 12.0002 21.3588C5.05924 21.3588 2.75024 21.3588 2.75024 14.2588C2.75024 8.92879 4.05024 7.58879 7.63024 7.25879"
+                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </g>
+                                            </g>
+                                        </svg><span>Investment Transfers</span></a>
+                                </li>
+
+                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
+                                    href="{{ route('totinvt.trans') }}">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <g>
+                                                <path d="M11.879 14.791V2.75" stroke="#130F26" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M14.795 11.8643L11.879 14.7923L8.96301 11.8643"
+                                                    stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M16.3702 7.25879C19.9492 7.58879 21.2502 8.92879 21.2502 14.2588C21.2502 21.3588 18.9392 21.3588 12.0002 21.3588C5.05924 21.3588 2.75024 21.3588 2.75024 14.2588C2.75024 8.92879 4.05024 7.58879 7.63024 7.25879"
+                                                    stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </g>
+                                        </g>
+                                    </svg><span>Total Invest Transfer</span></a>
+                            </li>
+
                                 {{-- END HERE --}}
                             </ul>
 

@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Zeta admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
-    <meta name="keywords"
-        content="admin template, Zeta admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="description" content="Find an Investment Plan You can Afford and keep up your cash flow now with us!
+    Search For an Investment Plan at Morhaulage.com
+    Trusted For Many Years. Immediate Response. ">
+    <meta name="keywords" content="admin template, Zeta admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
     {{-- <link rel="icon" href="/assets_dashboard/images/logo/favicon-icon.png" type="image/x-icon"> --}}
     {{-- <link rel="shortcut icon" href="/assets_dashboard/images/logo/favicon-icon.png" type="image/x-icon"> --}}
@@ -462,7 +462,7 @@
                                 </a>
                             </li>
                                 <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title" href="">
+                                    <a class="sidebar-link sidebar-title" href="{{route('ref.users')}}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g>

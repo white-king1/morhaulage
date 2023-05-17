@@ -53,7 +53,21 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
 
     // ADMIN TRANSFERS OF FUNDS
     Route::get('/transfer', 'TransferController@newTransafer')->name('new.transfer');
+
     Route::post('/transfer_details', 'TransferController@transferDetails')->name('transfer.details');
+
+    // INVESTMENT WALLET TRANSFER
+    Route::get('/invest_trans', 'TransferController@investmentTrans')->name('invest.trans');
+
+    Route::post('/transfer_investment', 'TransferController@transferInvestment')->name('transfer.investment');
+    // INVESTMENT WALLET TRANSFER ENDS HERE
+
+    // TOTAL INVEST TRANSFER
+    Route::get('/totalinvest_trans', 'TransferController@totalinvestTrans')->name('totinvt.trans');
+
+    Route::post('/totalinvesttrans_details', 'TransferController@totalinvesttransDetails')->name('totalinvest.trans');
+    // TOTAL INVEST TRANSFER END HERE
+
     Route::get('/transfer_successful', 'TransferController@transferSuccessful')->name('transfer.successful');
     // THE ADMIN DASHBOARD ENDS HERE
 });
@@ -149,5 +163,7 @@ Route::middleware(['auth'])->prefix('user')->group(function () {
 
     // TO RE-INVEST YOUR TOTAL BALANCE
     Route::get('/re-invest_balance', 'ReinvestController@reinvestBalance')->name('reinvest.balance');
+
+
 
 });

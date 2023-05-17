@@ -42,7 +42,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($ref_users as $user)
+                                @foreach ($referrals as $user)
                                     <tr>
                                         <td>
                                             <h6>{{ $user->name }}</h6>

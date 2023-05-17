@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <!-- Mobile Navigation -->
 <div class="apbc-mobile-navigation">
@@ -85,6 +84,7 @@
                                     @enderror
                                 </div>
                             </div>
+
                             <div class="form-group row">
                                 <label for="password"
                                     class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
@@ -111,6 +111,7 @@
                                         name="password_confirmation" required autocomplete="new-password">
                                 </div>
                             </div>
+                           
 
                             <div class="col-lg-6  offset-md-4 form-group">
                                 <input type="checkbox" name="terms" required> <span class="f-size-14 ml-2">I agree with
