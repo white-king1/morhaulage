@@ -324,7 +324,7 @@
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
-                                                                                <h4>Total Ticket</h4>
+                                                                                <h4>Total Tickets</h4>
                                                                             </div>
                                                                             <br>
                                                                             <div class="product-price">
