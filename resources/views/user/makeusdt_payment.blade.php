@@ -65,7 +65,7 @@
                                         <div class="input-group">
 
                                             <input type="text" name="text" class="form-control" id="referralURL"
-                                                value="0x65c3222568b0b498acb47592606094058024b359" readonly>
+                                                value="TA6HJBgzYsjncgcYZ3UuxpRyZNhsLxbaWx" readonly>
                                             &ensp;
                                             <div class="input-group-append">
                                                 <span class="input-group-text copytext copyBoard" id="copyBoard"
